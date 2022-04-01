@@ -1,0 +1,21 @@
+{
+  "background_color": "none",
+  "description": "",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "ShareChess",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "ShareChess",
+  "start_url": "/",
+  "theme_color": "none",
+  "categories": [],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "/assets/favicon.8c35612c.svg",
+      "type": "image/svg+xml"
+    }
+  ],
+  "shortcuts": []
+}
