@@ -1,4 +1,4 @@
-Dmuys Cotton piece set
+Dmuysi Cotton piece set
 
 Original author: Zach Bogart (https://thenounproject.com/zachbogart/)
 Color variant by: caderek (https://github.com/caderek)

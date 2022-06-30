@@ -1,4 +1,4 @@
-Dmuys Kournikova piece set
+Dmuysi Kournikova piece set
 
 Original author: Zach Bogart (https://thenounproject.com/zachbogart/)
 Color variant by: caderek (https://github.com/caderek)

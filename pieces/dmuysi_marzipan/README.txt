@@ -1,4 +1,4 @@
-Dmuys Marzipan piece set
+Dmuysi Marzipan piece set
 
 Original author: Zach Bogart (https://thenounproject.com/zachbogart/)
 Color variant by: caderek (https://github.com/caderek)
