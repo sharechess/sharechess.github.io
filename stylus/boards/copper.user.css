@@ -1,0 +1,49 @@
+/* ==UserStyle==
+    @name           Copper board
+    @namespace      sharechess.github.io
+    @version        1.0.0
+    @description    Chessboard for lichess.org, chess.com
+    @author         sharechess.github.io
+    ==/UserStyle== */
+
+@-moz-document domain(lichess.org), domain(chess.com) {
+  :root {
+    --sharechess-board-url: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAASwAQMAAADR7yGMAAAABlBMVEWNYmLtjY3Jiv8EAAADEklEQVR42u3cwQnDUAxEwQ8uwCW5dZeUAgxJAe9ijHMQzB6FJKaCXd/kWsnerbNbL75aWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYj1jN1sNPt45u/fUVFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhbWnVcd6WnGwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwprLavQ0Y2FhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWHNZXWkpxkLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLay6r0dOMhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhTWX1ZGeZiwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCysuaxGTzMWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYW1ljWD+8iRPOPKpVuAAAAAElFTkSuQmCC);
+  }
+}
+
+@-moz-document domain("lichess.org") {
+  .is2d cg-board {
+    background-image: var(--sharechess-board-url) !important;
+  }
+  .is2d coords {
+    --cg-ccw: #ed8d8d !important;
+    --cg-ccb: #8d6262 !important;
+  }
+  square.last-move {
+    background-color: #00ff8c44 !important;
+  }
+}
+
+@-moz-document domain("chess.com") {
+  .board {
+    background-image: var(--sharechess-board-url) !important;
+  }
+  .coordinate-light {
+    fill: #8d6262 !important;
+  }
+  .coordinate-dark {
+    fill: #ed8d8d !important;
+  }
+  .coords-light {
+    color: #8d6262 !important;
+  }
+  .coords-dark {
+    color: #ed8d8d !important;
+  }
+  .highlight,
+  .square.move-square {
+    opacity: 1 !important;
+    background-color: #00ff8c44 !important;
+  }
+}
