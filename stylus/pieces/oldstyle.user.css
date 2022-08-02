@@ -3,7 +3,8 @@
     @namespace      sharechess.github.io
     @version        1.0.0
     @description    Piece set for lichess.org, chess.com
-    @author         sharechess.github.io
+    @author         Monika Berger 
+    @license        Non-Commercial
     ==/UserStyle== */
 
 @-moz-document domain(lichess.org), domain(chess.com) {
