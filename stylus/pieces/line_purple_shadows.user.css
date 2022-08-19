@@ -1,13 +1,13 @@
 /* ==UserStyle==
     @name           Line Purple Shadows piece set
     @namespace      sharechess.github.io
-    @version        1.0.0
-    @description    Piece set for lichess.org, chess.com
+    @version        1.1.0
+    @description    Piece set for lichess.org, chess.com, openingtree.com
     @author         Armando Hernandez Marroquin (color variant by caderek)
     @license        "freeware"
     ==/UserStyle== */
 
-@-moz-document domain(lichess.org), domain(chess.com) {
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com) {
   :root {
     --sharechess-bb-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE4MCAxODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik01MC42MjUgODEuMzM0MUgxMjkuMzc1VjE2My4xMjVINTAuNjI1VjgxLjMzNDFaTTYwLjE1MzIgNDQuNjQ3Nkw4OS45NzgxIDE2Ljg3NUwxMTkuODQ3IDQ0LjY4ODlMOTAuMDIxOSA3Mi40NjE4TDYwLjE1MzIgNDQuNjQ3NloiIGZpbGw9IiMyQTI0MzgiLz4KPC9zdmc+Cg==);
     --sharechess-bw-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE4MCAxODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik04MC41MDE2IDQ0LjI1NDJMOTIuMzIyNiA1Ni4wMzQ2TDEwNC4xNDQgNDQuMjEzNkw5Mi4zNjMxIDMyLjM5MjZMODAuNTAxNiA0NC4yNTQyWk02NC45ODM5IDQ0LjIxMzZMOTIuMzIyNiAxNi44NzVMMTE5LjcwMiA0NC4yNTQyTDkyLjM2MzEgNzEuNTkyOEw2NC45ODM5IDQ0LjIxMzZaTTY3LjUwMjIgOTEuMzc1OVYxNDkuNTQ3SDExNy4xODNWOTEuMzc1OUg2Ny41MDIyWk01Ni4yNSA4MC4zMjY3SDEyOC40MzZWMTYwLjg0SDU2LjI1VjgwLjMyNjdaIiBmaWxsPSIjMkEyNDM4Ii8+CjxwYXRoIGQ9Ik04MC41MDEgNDQuMjU0M0w5Mi4zMjI1IDU2LjAzNDZMMTA0LjE0MyA0NC4yMTM2TDkyLjM2MyAzMi4zOTI2TDgwLjUwMSA0NC4yNTQzWk02Ny41MDIyIDkxLjM3NTlWMTQ5LjU0N0gxMTcuMTgzVjkxLjM3NTlINjcuNTAyMloiIGZpbGw9IiNEQkQ4RTMiLz4KPC9zdmc+Cg==);
@@ -147,6 +147,49 @@
   .promotion-piece.wr,
   .piece[style*="wr.png"],
   .promotion-piece[style*="wr.png"] {
+    background-image: var(--sharechess-rw-url) !important;
+  }
+}
+
+@-moz-document domain("openingtree.com") {
+  piece {
+    filter: drop-shadow(0.5vh 0.5vh 0.4vh #00000088);
+  }
+
+  .bishop.black {
+    background-image: var(--sharechess-bb-url) !important;
+  }
+  .bishop.white {
+    background-image: var(--sharechess-bw-url) !important;
+  }
+  .king.black {
+    background-image: var(--sharechess-kb-url) !important;
+  }
+  .king.white {
+    background-image: var(--sharechess-kw-url) !important;
+  }
+  .knight.black {
+    background-image: var(--sharechess-nb-url) !important;
+  }
+  .knight.white {
+    background-image: var(--sharechess-nw-url) !important;
+  }
+  .pawn.black {
+    background-image: var(--sharechess-pb-url) !important;
+  }
+  .pawn.white {
+    background-image: var(--sharechess-pw-url) !important;
+  }
+  .queen.black {
+    background-image: var(--sharechess-qb-url) !important;
+  }
+  .queen.white {
+    background-image: var(--sharechess-qw-url) !important;
+  }
+  .rook.black {
+    background-image: var(--sharechess-rb-url) !important;
+  }
+  .rook.white {
     background-image: var(--sharechess-rw-url) !important;
   }
 }

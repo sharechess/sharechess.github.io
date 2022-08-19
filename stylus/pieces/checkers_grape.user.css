@@ -1,13 +1,13 @@
 /* ==UserStyle==
     @name           Checkers Grape piece set
     @namespace      sharechess.github.io
-    @version        1.0.0
-    @description    Piece set for lichess.org, chess.com
+    @version        1.1.0
+    @description    Piece set for lichess.org, chess.com, openingtree.com
     @author         caderek (color variant by caderek)
     @license        CC BY-NC-SA 4.0
     ==/UserStyle== */
 
-@-moz-document domain(lichess.org), domain(chess.com) {
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com) {
   :root {
     --sharechess-bb-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU3IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NyAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTI4LjM5NiAyMjAuMTE2QzE1Ni4zODUgMjIwLjExNiAxODEuOTkgMjEyLjM4OSAyMDAuNzY2IDE5OS41ODJDMjE5LjUxMiAxODYuNzk3IDIzMS45NjIgMTY4LjUxMyAyMzEuOTYyIDE0Ny41N1YxMDkuNTQ1QzIzMS45NjIgODguNjAyIDIxOS41MTIgNzAuMzE4NiAyMDAuNzY2IDU3LjUzMjlDMTgxLjk5IDQ0LjcyNjYgMTU2LjM4NSAzNi45OTkzIDEyOC4zOTYgMzYuOTk5M0MxMDAuNDA3IDM2Ljk5OTMgNzQuODAyMyA0NC43MjY2IDU2LjAyNjIgNTcuNTMyOUMzNy4yODA0IDcwLjMxODYgMjQuODMwMSA4OC42MDIgMjQuODMwMSAxMDkuNTQ1VjE0Ny41N0MyNC44MzAxIDE2OC41MTMgMzcuMjgwNCAxODYuNzk3IDU2LjAyNjIgMTk5LjU4MkM3NC44MDIzIDIxMi4zODkgMTAwLjQwNyAyMjAuMTE2IDEyOC4zOTYgMjIwLjExNloiIGZpbGw9IiMxODBDMUQiLz4KPHBhdGggZD0iTTIyNS45NTggMTQ3LjU3QzIyNS45NTggMTg0LjMyIDE4Mi4yNzggMjE0LjExMiAxMjguMzk2IDIxNC4xMTJDNzQuNTE0MSAyMTQuMTEyIDMwLjgzNCAxODQuMzIgMzAuODM0IDE0Ny41N1YxMDkuNTQ1QzMwLjgzNCA3Mi43OTUgNzQuNTE0MSA0My4wMDI5IDEyOC4zOTYgNDMuMDAyOUMxODIuMjc4IDQzLjAwMjkgMjI1Ljk1OCA3Mi43OTUgMjI1Ljk1OCAxMDkuNTQ1VjE0Ny41N1oiIGZpbGw9IiNBMTI1NTkiLz4KPHBhdGggZD0iTTEyOC4zOTYgMjE0LjExMkMxODIuMjc4IDIxNC4xMTIgMjI1Ljk1OCAxODQuMzIgMjI1Ljk1OCAxNDcuNTdWMTA5LjU0NkMyMjUuOTU4IDE0Ni4yOTYgMTgyLjI3OCAxNzYuMDg4IDEyOC4zOTYgMTc2LjA4OEM3NC41MTM2IDE3Ni4wODggMzAuODMzNSAxNDYuMjk2IDMwLjgzMzUgMTA5LjU0NlYxNDcuNTdDMzAuODMzNSAxODQuMzIgNzQuNTEzNiAyMTQuMTEyIDEyOC4zOTYgMjE0LjExMloiIGZpbGw9ImJsYWNrIiBmaWxsLW9wYWNpdHk9IjAuNSIvPgo8cGF0aCBkPSJNMjA4LjI4IDEwOS4xOTFDMjA3Ljk1MSA4Ni41NTk4IDE3Mi43MzkgNjguMjY2NiAxMjkuMzQ5IDY4LjI2NjZDODUuOTU5NCA2OC4yNjY2IDUwLjc0NjkgODYuNTU5OCA1MC40MTgxIDEwOS4xOTFDNTAuNDE2NSAxMDkuMDYxIDUwLjQxNTggMTA4LjkzIDUwLjQxNTggMTA4LjhDNTAuNDE1OCA4MC45MTU2IDg1Ljc1NTIgNTguMzExIDEyOS4zNDkgNTguMzExQzE3Mi45NDMgNTguMzExIDIwOC4yODIgODAuOTE1NiAyMDguMjgyIDEwOC44QzIwOC4yODIgMTA4LjkzMSAyMDguMjgyIDEwOS4wNjEgMjA4LjI4IDEwOS4xOTFaIiBmaWxsPSJibGFjayIgZmlsbC1vcGFjaXR5PSIwLjUiLz4KPHBhdGggZD0iTTEyOS4zNDkgMTU5LjI4OUMxNzAuOSAxNTkuMjg5IDIwNC45NTIgMTM4Ljc1MyAyMDguMDUyIDExMi42ODRMMjA4LjI4IDEwOS4xOTFDMjA3Ljk1MSA4Ni41NTk4IDE3Mi43MzkgNjguMjY2NiAxMjkuMzQ5IDY4LjI2NjZDODUuOTU5NCA2OC4yNjY2IDUwLjc0NjkgODYuNTU5OCA1MC40MTgxIDEwOS4xOTFMNTAuNjQ1OCAxMTIuNjg0QzUzLjc0NjIgMTM4Ljc1MyA4Ny43OTgyIDE1OS4yODkgMTI5LjM0OSAxNTkuMjg5WiIgZmlsbD0iYmxhY2siIGZpbGwtb3BhY2l0eT0iMC4yIi8+Cjwvc3ZnPgo=);
     --sharechess-bw-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU3IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NyAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTI4LjY3MiAyMjAuMTE2QzE1Ni42NjEgMjIwLjExNiAxODIuMjY2IDIxMi4zODkgMjAxLjA0MiAxOTkuNTgyQzIxOS43ODggMTg2Ljc5NyAyMzIuMjM4IDE2OC41MTMgMjMyLjIzOCAxNDcuNTdWMTA5LjU0NUMyMzIuMjM4IDg4LjYwMiAyMTkuNzg4IDcwLjMxODYgMjAxLjA0MiA1Ny41MzI5QzE4Mi4yNjYgNDQuNzI2NiAxNTYuNjYxIDM2Ljk5OTMgMTI4LjY3MiAzNi45OTkzQzEwMC42ODMgMzYuOTk5MyA3NS4wNzg1IDQ0LjcyNjYgNTYuMzAyMyA1Ny41MzI5QzM3LjU1NjUgNzAuMzE4NiAyNS4xMDYyIDg4LjYwMiAyNS4xMDYyIDEwOS41NDVWMTQ3LjU3QzI1LjEwNjIgMTY4LjUxMyAzNy41NTY1IDE4Ni43OTcgNTYuMzAyMyAxOTkuNTgyQzc1LjA3ODUgMjEyLjM4OSAxMDAuNjgzIDIyMC4xMTYgMTI4LjY3MiAyMjAuMTE2WiIgZmlsbD0iIzI1NDYyOCIvPgo8cGF0aCBkPSJNMjI2LjIzNCAxNDcuNTdDMjI2LjIzNCAxODQuMzIgMTgyLjU1NCAyMTQuMTEyIDEyOC42NzIgMjE0LjExMkM3NC43OTAxIDIxNC4xMTIgMzEuMTEgMTg0LjMyIDMxLjExIDE0Ny41N1YxMDkuNTQ1QzMxLjExIDcyLjc5NSA3NC43OTAxIDQzLjAwMjkgMTI4LjY3MiA0My4wMDI5QzE4Mi41NTQgNDMuMDAyOSAyMjYuMjM0IDcyLjc5NSAyMjYuMjM0IDEwOS41NDVWMTQ3LjU3WiIgZmlsbD0iI0M2REU0MSIvPgo8cGF0aCBkPSJNMTI4LjY3MiAyMTQuMTEyQzE4Mi41NTQgMjE0LjExMiAyMjYuMjM0IDE4NC4zMiAyMjYuMjM0IDE0Ny41N1YxMDkuNTQ2QzIyNi4yMzQgMTQ2LjI5NiAxODIuNTU0IDE3Ni4wODggMTI4LjY3MiAxNzYuMDg4Qzc0Ljc4OTggMTc2LjA4OCAzMS4xMDk3IDE0Ni4yOTYgMzEuMTA5NyAxMDkuNTQ2VjE0Ny41N0MzMS4xMDk3IDE4NC4zMiA3NC43ODk4IDIxNC4xMTIgMTI4LjY3MiAyMTQuMTEyWiIgZmlsbD0iIzAwMUMwOSIgZmlsbC1vcGFjaXR5PSIwLjQiLz4KPHBhdGggZD0iTTIwOC41NTYgMTA5LjE5MUMyMDguMjI3IDg2LjU1OTggMTczLjAxNSA2OC4yNjY2IDEyOS42MjUgNjguMjY2NkM4Ni4yMzU2IDY4LjI2NjYgNTEuMDIzMiA4Ni41NTk4IDUwLjY5NDMgMTA5LjE5MUM1MC42OTI4IDEwOS4wNjEgNTAuNjkyIDEwOC45MyA1MC42OTIgMTA4LjhDNTAuNjkyIDgwLjkxNTYgODYuMDMxNSA1OC4zMTEgMTI5LjYyNSA1OC4zMTFDMTczLjIxOSA1OC4zMTEgMjA4LjU1OSA4MC45MTU2IDIwOC41NTkgMTA4LjhDMjA4LjU1OSAxMDguOTMxIDIwOC41NTggMTA5LjA2MSAyMDguNTU2IDEwOS4xOTFaIiBmaWxsPSIjMDAxQzA5IiBmaWxsLW9wYWNpdHk9IjAuNCIvPgo8cGF0aCBkPSJNMTI5LjYyNSAxNTkuMjg5QzE3MS4xNzYgMTU5LjI4OSAyMDUuMjI4IDEzOC43NTMgMjA4LjMyOSAxMTIuNjg0TDIwOC41NTYgMTA5LjE5MUMyMDguMjI3IDg2LjU1OTggMTczLjAxNSA2OC4yNjY2IDEyOS42MjUgNjguMjY2NkM4Ni4yMzU2IDY4LjI2NjYgNTEuMDIzMiA4Ni41NTk4IDUwLjY5NDMgMTA5LjE5MUw1MC45MjIxIDExMi42ODRDNTQuMDIyNSAxMzguNzUzIDg4LjA3NDUgMTU5LjI4OSAxMjkuNjI1IDE1OS4yODlaIiBmaWxsPSIjMDAxQzA5IiBmaWxsLW9wYWNpdHk9IjAuMTUiLz4KPC9zdmc+Cg==);
@@ -147,6 +147,49 @@
   .promotion-piece.wr,
   .piece[style*="wr.png"],
   .promotion-piece[style*="wr.png"] {
+    background-image: var(--sharechess-rw-url) !important;
+  }
+}
+
+@-moz-document domain("openingtree.com") {
+  piece {
+    filter: none;
+  }
+
+  .bishop.black {
+    background-image: var(--sharechess-bb-url) !important;
+  }
+  .bishop.white {
+    background-image: var(--sharechess-bw-url) !important;
+  }
+  .king.black {
+    background-image: var(--sharechess-kb-url) !important;
+  }
+  .king.white {
+    background-image: var(--sharechess-kw-url) !important;
+  }
+  .knight.black {
+    background-image: var(--sharechess-nb-url) !important;
+  }
+  .knight.white {
+    background-image: var(--sharechess-nw-url) !important;
+  }
+  .pawn.black {
+    background-image: var(--sharechess-pb-url) !important;
+  }
+  .pawn.white {
+    background-image: var(--sharechess-pw-url) !important;
+  }
+  .queen.black {
+    background-image: var(--sharechess-qb-url) !important;
+  }
+  .queen.white {
+    background-image: var(--sharechess-qw-url) !important;
+  }
+  .rook.black {
+    background-image: var(--sharechess-rb-url) !important;
+  }
+  .rook.white {
     background-image: var(--sharechess-rw-url) !important;
   }
 }

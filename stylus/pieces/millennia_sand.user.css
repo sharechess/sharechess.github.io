@@ -1,13 +1,13 @@
 /* ==UserStyle==
     @name           Millennia Sand piece set
     @namespace      sharechess.github.io
-    @version        1.0.0
-    @description    Piece set for lichess.org, chess.com
+    @version        1.1.0
+    @description    Piece set for lichess.org, chess.com, openingtree.com
     @author         Armando Hernandez Marroquin (color variant by caderek)
     @license        "freeware"
     ==/UserStyle== */
 
-@-moz-document domain(lichess.org), domain(chess.com) {
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com) {
   :root {
     --sharechess-bb-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE4MCAxODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0yOC4xMjUgOTkuNDk3OFY2NC43MTUxTDg3LjMxNzQgMzMuNzVMMTE3LjM0NiA0OS40NDQ3TDU0LjYwNTggODEuOTM3MVY5OS40OTc4VjEyMS44MVYxMzcuMDhIMTE5Ljg1NlYxMjEuNDcxVjk5LjQ5NzhWODEuOTM3MUwxMDAuNjQ0IDcyLjAxMTNMMTMwLjUgNTYuMzE2NEwxNDYuMjUgNjQuNzE1MVY5OS40MTI5VjEyMS42NFYxNjMuMTI1SDI4LjEyNVYxMjEuODFWOTkuNDk3OFoiIGZpbGw9IiMyNDIyMkQiLz4KPC9zdmc+Cg==);
     --sharechess-bw-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE4MCAxODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMzkuMDA2IDEwMi4xMzlWNzMuNDMzM0wxMjkuMjc0IDY4LjI0MzFMMTE1LjE2NSA3NS43ODQ1TDEyNS4yMiA4MS4xMzY3VjEwMi4xMzlMMTI1LjEzOSAxNDMuNjU3SDUzLjEzMDVWMTAyLjIyVjgxLjcwNDJMMTA0LjIxOCA1NC43MDExTDg5LjEzNDkgNDYuNjczMkwzOS4yNjQxIDczLjU5NTNWMTAyLjIyVjE1Ny41MjRIMTM5LjAwNlYxMDIuMTM5Wk0zMy43NSAxMDIuMjJWNjguOTczMkw4OS4yMTU5IDM5LjM3NUwxMTcuMzU0IDU0LjM3NjdMNTguNTYzNiA4NS40MzQyVjEwMi4yMlYxMjMuNTQ3VjEzOC4xNDNIMTE5LjcwNlYxMjMuMjIyVjEwMi4yMlY4NS40MzQyTDEwMS43MDQgNzUuOTQ3MUwxMjkuNjggNjAuOTQ1MkwxNDQuNDM4IDY4Ljk3MzJWMTAyLjEzOVYxMjMuMzg1VjE2My4wMzhIMzMuNzVWMTIzLjU0N1YxMDIuMjJaIiBmaWxsPSIjMjQyMjJEIi8+CjxwYXRoIGQ9Ik0xMzkuMDA1IDEwMi4xMzlWNzMuNDMyN0wxMjkuMjc0IDY4LjI0MzFMMTE1LjE2NSA3NS43ODQ1TDEyNS4yMiA4MS4xMzY3VjEwMi4xMzlMMTI1LjEzOSAxNDMuNjU3SDUzLjEzMDNWMTAyLjIyVjgxLjcwNDJMMTA0LjIxNyA1NC43MDFMODkuMTM0MyA0Ni42NzMxTDM5LjI2MzkgNzMuNTk1MlYxMDIuMjJWMTU3LjUyNEgxMzkuMDA1VjEwMi4xMzlaIiBmaWxsPSIjRkRDNTdCIi8+Cjwvc3ZnPgo=);
@@ -147,6 +147,49 @@
   .promotion-piece.wr,
   .piece[style*="wr.png"],
   .promotion-piece[style*="wr.png"] {
+    background-image: var(--sharechess-rw-url) !important;
+  }
+}
+
+@-moz-document domain("openingtree.com") {
+  piece {
+    filter: none;
+  }
+
+  .bishop.black {
+    background-image: var(--sharechess-bb-url) !important;
+  }
+  .bishop.white {
+    background-image: var(--sharechess-bw-url) !important;
+  }
+  .king.black {
+    background-image: var(--sharechess-kb-url) !important;
+  }
+  .king.white {
+    background-image: var(--sharechess-kw-url) !important;
+  }
+  .knight.black {
+    background-image: var(--sharechess-nb-url) !important;
+  }
+  .knight.white {
+    background-image: var(--sharechess-nw-url) !important;
+  }
+  .pawn.black {
+    background-image: var(--sharechess-pb-url) !important;
+  }
+  .pawn.white {
+    background-image: var(--sharechess-pw-url) !important;
+  }
+  .queen.black {
+    background-image: var(--sharechess-qb-url) !important;
+  }
+  .queen.white {
+    background-image: var(--sharechess-qw-url) !important;
+  }
+  .rook.black {
+    background-image: var(--sharechess-rb-url) !important;
+  }
+  .rook.white {
     background-image: var(--sharechess-rw-url) !important;
   }
 }

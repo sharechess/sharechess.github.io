@@ -1,13 +1,13 @@
 /* ==UserStyle==
     @name           Shapes Shadows piece set
     @namespace      sharechess.github.io
-    @version        1.0.0
-    @description    Piece set for lichess.org, chess.com
+    @version        1.1.0
+    @description    Piece set for lichess.org, chess.com, openingtree.com
     @author         flugsio 
     @license        CC BY-SA 4.0
     ==/UserStyle== */
 
-@-moz-document domain(lichess.org), domain(chess.com) {
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com) {
   :root {
     --sharechess-bb-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNjguNzg3IDQwLjUwM0wxMDAgNzEuNzE2TDEzMS4yMTMgNDAuNTAzTDE2Ni41NjkgMzMuNDMxTDE1OS40OTcgNjguNzg3TDEyOC4yODQgMTAwTDE1OS40OTcgMTMxLjIxM0wxNjYuNTY5IDE2Ni41NjlMMTMxLjIxMyAxNTkuNDk3TDEwMCAxMjguMjg0TDY4Ljc4NyAxNTkuNDk3TDMzLjQzMSAxNjYuNTY5TDQwLjUwMyAxMzEuMjEzTDcxLjcxNiAxMDBMNDAuNTAzIDY4Ljc4N0wzMy40MyAzMy40M0w2OC43ODcgNDAuNTAzWiIgZmlsbD0iIzMzMzMzMyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSI2IiBzdHJva2UtbGluZWpvaW49ImJldmVsIi8+Cjwvc3ZnPgo=);
     --sharechess-bw-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNjguNzg3IDQwLjUwM0wxMDAgNzEuNzE2TDEzMS4yMTMgNDAuNTAzTDE2Ni41NjkgMzMuNDMxTDE1OS40OTcgNjguNzg3TDEyOC4yODQgMTAwTDE1OS40OTcgMTMxLjIxM0wxNjYuNTY5IDE2Ni41NjlMMTMxLjIxMyAxNTkuNDk3TDEwMCAxMjguMjg0TDY4Ljc4NyAxNTkuNDk3TDMzLjQzMSAxNjYuNTY5TDQwLjUwMyAxMzEuMjEzTDcxLjcxNiAxMDBMNDAuNTAzIDY4Ljc4N0wzMy40MyAzMy40M0w2OC43ODcgNDAuNTAzWiIgZmlsbD0id2hpdGUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iNiIgc3Ryb2tlLWxpbmVqb2luPSJiZXZlbCIvPgo8L3N2Zz4K);
@@ -147,6 +147,49 @@
   .promotion-piece.wr,
   .piece[style*="wr.png"],
   .promotion-piece[style*="wr.png"] {
+    background-image: var(--sharechess-rw-url) !important;
+  }
+}
+
+@-moz-document domain("openingtree.com") {
+  piece {
+    filter: drop-shadow(0.5vh 0.5vh 0.4vh #00000088);
+  }
+
+  .bishop.black {
+    background-image: var(--sharechess-bb-url) !important;
+  }
+  .bishop.white {
+    background-image: var(--sharechess-bw-url) !important;
+  }
+  .king.black {
+    background-image: var(--sharechess-kb-url) !important;
+  }
+  .king.white {
+    background-image: var(--sharechess-kw-url) !important;
+  }
+  .knight.black {
+    background-image: var(--sharechess-nb-url) !important;
+  }
+  .knight.white {
+    background-image: var(--sharechess-nw-url) !important;
+  }
+  .pawn.black {
+    background-image: var(--sharechess-pb-url) !important;
+  }
+  .pawn.white {
+    background-image: var(--sharechess-pw-url) !important;
+  }
+  .queen.black {
+    background-image: var(--sharechess-qb-url) !important;
+  }
+  .queen.white {
+    background-image: var(--sharechess-qw-url) !important;
+  }
+  .rook.black {
+    background-image: var(--sharechess-rb-url) !important;
+  }
+  .rook.white {
     background-image: var(--sharechess-rw-url) !important;
   }
 }

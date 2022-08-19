@@ -1,12 +1,12 @@
 /* ==UserStyle==
     @name           Standard board
     @namespace      sharechess.github.io
-    @version        1.0.0
-    @description    Chessboard for lichess.org, chess.com
+    @version        1.1.0
+    @description    Chessboard for lichess.org, chess.com, openingtree.com
     @author         sharechess.github.io
     ==/UserStyle== */
 
-@-moz-document domain(lichess.org), domain(chess.com) {
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com) {
   :root {
     --sharechess-board-url: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAASwAQMAAADR7yGMAAAABlBMVEUArYie4LxuGeWNAAADEklEQVR42u3cwQnDUAxEwQ8uwCW5dZeUAgxJAe9ijHMQzB6FJKaCXd/kWsnerbNbL75aWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYj1jN1sNPt45u/fUVFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhbWnVcd6WnGwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwprLavQ0Y2FhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWHNZXWkpxkLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLay6r0dOMhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhTWX1ZGeZiwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCysuaxGTzMWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYW1ljWD+8iRPOPKpVuAAAAAElFTkSuQmCC);
   }
@@ -44,6 +44,15 @@
   .highlight,
   .square.move-square {
     opacity: 1 !important;
+    background-color: #ffff0055 !important;
+  }
+}
+
+@-moz-document domain("openingtree.com") {
+  .cg-wrap {
+    background-image: var(--sharechess-board-url) !important;
+  }
+  square.last-move {
     background-color: #ffff0055 !important;
   }
 }
