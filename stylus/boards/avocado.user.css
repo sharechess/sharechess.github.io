@@ -51,6 +51,8 @@
 @-moz-document domain("openingtree.com") {
   .cg-wrap {
     background-image: var(--sharechess-board-url) !important;
+    background-size: cover !important;
+    filter: none !important;
   }
   square.last-move {
     background-color: #0099ff55 !important;
