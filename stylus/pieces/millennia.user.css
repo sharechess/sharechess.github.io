@@ -2,12 +2,12 @@
     @name           Millennia piece set
     @namespace      sharechess.github.io
     @version        1.1.0
-    @description    Piece set for lichess.org, chess.com, openingtree.com
+    @description    Piece set for lichess.org, chess.com, openingtree.com, chessgames.com
     @author         Armando Hernandez Marroquin 
     @license        "freeware"
     ==/UserStyle== */
 
-@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com) {
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com) {
   :root {
     --sharechess-bb-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE4MCAxODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0yOC4xMjUgOTkuNDk3OFY2NC43MTUxTDg3LjMxNzQgMzMuNzVMMTE3LjM0NiA0OS40NDQ3TDU0LjYwNTggODEuOTM3MVY5OS40OTc4VjEyMS44MVYxMzcuMDhIMTE5Ljg1NlYxMjEuNDcxVjk5LjQ5NzhWODEuOTM3MUwxMDAuNjQ0IDcyLjAxMTNMMTMwLjUgNTYuMzE2NEwxNDYuMjUgNjQuNzE1MVY5OS40MTI5VjEyMS42NFYxNjMuMTI1SDI4LjEyNVYxMjEuODFWOTkuNDk3OFoiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPgo=);
     --sharechess-bw-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE4MCAxODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMzkuMDA2IDEwMi4xMzlWNzMuNDMzM0wxMjkuMjc0IDY4LjI0MzFMMTE1LjE2NSA3NS43ODQ1TDEyNS4yMiA4MS4xMzY3VjEwMi4xMzlMMTI1LjEzOSAxNDMuNjU3SDUzLjEzMDVWMTAyLjIyVjgxLjcwNDJMMTA0LjIxOCA1NC43MDExTDg5LjEzNDkgNDYuNjczMkwzOS4yNjQxIDczLjU5NTNWMTAyLjIyVjE1Ny41MjRIMTM5LjAwNlYxMDIuMTM5Wk0zMy43NSAxMDIuMjJWNjguOTczMkw4OS4yMTU5IDM5LjM3NUwxMTcuMzU0IDU0LjM3NjdMNTguNTYzNiA4NS40MzQyVjEwMi4yMlYxMjMuNTQ3VjEzOC4xNDNIMTE5LjcwNlYxMjMuMjIyVjEwMi4yMlY4NS40MzQyTDEwMS43MDQgNzUuOTQ3MUwxMjkuNjggNjAuOTQ1MkwxNDQuNDM4IDY4Ljk3MzJWMTAyLjEzOVYxMjMuMzg1VjE2My4wMzhIMzMuNzVWMTIzLjU0N1YxMDIuMjJaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTM5LjAwNSAxMDIuMTM5VjczLjQzMjdMMTI5LjI3NCA2OC4yNDMxTDExNS4xNjUgNzUuNzg0NUwxMjUuMjIgODEuMTM2N1YxMDIuMTM5TDEyNS4xMzkgMTQzLjY1N0g1My4xMzAzVjEwMi4yMlY4MS43MDQyTDEwNC4yMTcgNTQuNzAxTDg5LjEzNDMgNDYuNjczMUwzOS4yNjM5IDczLjU5NTJWMTAyLjIyVjE1Ny41MjRIMTM5LjAwNVYxMDIuMTM5WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==);
@@ -191,5 +191,48 @@
   }
   .rook.white {
     background-image: var(--sharechess-rw-url) !important;
+  }
+}
+
+@-moz-document domain("chessgames.com") {
+  [class^="piece-"] {
+    filter: none;
+  }
+
+  [src$="bB.png"] {
+    content: var(--sharechess-bb-url) !important;
+  }
+  [src$="wB.png"] {
+    content: var(--sharechess-bw-url) !important;
+  }
+  [src$="bK.png"] {
+    content: var(--sharechess-kb-url) !important;
+  }
+  [src$="wK.png"] {
+    content: var(--sharechess-kw-url) !important;
+  }
+  [src$="bN.png"] {
+    content: var(--sharechess-nb-url) !important;
+  }
+  [src$="wN.png"] {
+    content: var(--sharechess-nw-url) !important;
+  }
+  [src$="bP.png"] {
+    content: var(--sharechess-pb-url) !important;
+  }
+  [src$="wP.png"] {
+    content: var(--sharechess-pw-url) !important;
+  }
+  [src$="bQ.png"] {
+    content: var(--sharechess-qb-url) !important;
+  }
+  [src$="wQ.png"] {
+    content: var(--sharechess-qw-url) !important;
+  }
+  [src$="bR.png"] {
+    content: var(--sharechess-rb-url) !important;
+  }
+  [src$="wR.png"] {
+    content: var(--sharechess-rw-url) !important;
   }
 }

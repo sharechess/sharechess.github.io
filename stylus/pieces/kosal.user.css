@@ -2,12 +2,12 @@
     @name           Kosal piece set
     @namespace      sharechess.github.io
     @version        1.1.0
-    @description    Piece set for lichess.org, chess.com, openingtree.com
+    @description    Piece set for lichess.org, chess.com, openingtree.com, chessgames.com
     @author         Philatype 
     @license        CC BY 4.0
     ==/UserStyle== */
 
-@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com) {
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com) {
   :root {
     --sharechess-bb-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODEiIGhlaWdodD0iODEiIHZpZXdCb3g9IjAgMCA4MSA4MSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE4LjkgNzJINjIuMUw1MC4zIDYyLjVIMzAuN0wxOC45IDcyWk00MSAxOC45QzQyLjUgMTguOSA0My45IDE4LjQgNDUgMTcuNkw0Ny44IDEyLjRWMTIuMUM0Ny44IDguNCA0NC44IDUuMyA0MSA1LjNDMzcuMyA1LjMgMzQuMiA4LjMgMzQuMiAxMi4xVjEyLjRMMzcgMTcuNkMzOC4yIDE4LjQgMzkuNiAxOC45IDQxIDE4LjlaIiBmaWxsPSIjMDEwMTAxIi8+CjxwYXRoIGQ9Ik00OC40IDIwLjRMMzguNyAzOC42TDM3IDMyLjdMNDUuMSAxNy41QzQ0LjEgMTYuNyA0My4xIDE2IDQyLjEgMTUuM0gzOUMyOSAyMS45IDE5LjkgMzIuOCAxOS45IDQ3LjVMMzAuOCA2Mi43SDUwLjJMNjEuMSA0Ny41QzYxLjEgMzYuMSA1NS42IDI3IDQ4LjQgMjAuNCIgZmlsbD0iIzAxMDEwMSIvPgo8cGF0aCBkPSJNNDguNiAyNy45TDQxLjQgNDAuOUM0MS40IDQwLjkgNDYuNCA0Mi4yIDQ4LjYgMzlDNTAuOCAzNS45IDUwLjIgMjguOSA0OC42IDI3LjlaTTMxLjIgNTUuMUMyOS42IDQxLjIgMzIuNiAyNyAzOS4xIDIwLjNMMzguNiAxOS42QzMxLjUgMjUuOSAyNC42IDM1LjIgMjQuNiA0Ni4yTDMxLjIgNTUuMVY1NS4xWk0zNy45IDY5VjYzLjNIMzUuNEwyOC44IDY5SDM3LjlaTTQyLjQgNy45QzQxLjYgNy40IDQwLjYgNy4zIDM5LjcgNy42QzM3LjggOC4xIDM2LjcgMTAuMSAzNy4yIDEyQzM3LjIgMTIuMSAzNy4yIDEyLjEgMzcuMyAxMi4yQzQwLjMgMTIuNCA0Mi44IDkuMyA0Mi40IDcuOVY3LjlaIiBmaWxsPSIjNkQ2RTZFIi8+Cjwvc3ZnPgo=);
     --sharechess-bw-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODEiIGhlaWdodD0iODEiIHZpZXdCb3g9IjAgMCA4MSA4MSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYxLjQgNzFMNDkuNSA2MS45TDYwLjEgNDcuM0M2MC4xIDM2LjMgNTUuMiAyNy40IDQ4LjIgMjFMNDYuNSAyMC4yTDM4LjYgMzQuNUwzNy4xIDMyLjlMNDQuOSAxOC4yTDQ3LjYgMTMuMVYxMi45QzQ3LjYgOS4zIDQ0LjcgNi4zIDQxIDYuM0MzNy40IDYuMyAzNC40IDkuMiAzNC40IDEyLjlWMTMuMUwzNi43IDE3LjVDMjggMjQuMSAyMC45IDM0LjEgMjAuOSA0Ny4zTDMxLjUgNjEuOUwxOS42IDcxSDYxLjRaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNDUuNiA3MC43SDYwTDQ5LjYgNjEuMkg0Mi44TDQ1LjYgNzAuN1pNNTAuOCAyNS4xQzU0LjcgNDIuMSAzNiA1NS44IDM2IDU1LjhMNDMuMyA2MC41SDUwLjdMNjAuOSA0Ny4zTDU5LjQgMzguN0w1NS44IDMwLjRMNTMuMiAyNkw1MC44IDI1LjFWMjUuMVpNNDQuNSA4LjZDNDUuMyAxMSA0MS4xIDEzIDQxLjEgMTNWMTguMUw0NC40IDE4LjJMNDcuNCAxMy45TDQ3LjEgMTAuNUw0NSA4LjZINDQuNVoiIGZpbGw9IiNDRkNFQ0YiLz4KPHBhdGggZD0iTTY1IDcyLjJMNTAuOSA2MS42TDYxLjEgNDcuNlY0Ny4yQzYxLjEgMzMuMSA1My41IDI0LjEgNDguOSAxOS45TDQ2LjYgMTcuNkw0OC43IDEzLjdMNDguOCAxMy40VjEyLjlDNDguOCA4LjYgNDUuMyA1IDQwLjkgNUMzNi42IDUgMzMuMSA4LjUgMzMuMSAxMi45VjEzLjRMMzUgMTcuMUMyOS4xIDIxLjcgMTkuNSAzMS43IDE5LjUgNDcuMlY0Ny42TDI5LjcgNjEuNkwxNiA3Mi4ySDY1Wk0yMi41IDQ2LjlDMjIuMiAzMi4zIDMxLjggMjIuOSAzNy41IDE4LjdMMzguNCAxOC4xTDM1LjcgMTNDMzUuNyAxMC4xIDM4LjEgNy43IDQxIDcuN0M0My45IDcuNyA0Ni4zIDEwLjEgNDYuNCAxM0wzNS44IDM0LjZWMzQuN0wzOCA0MC41TDQ3LjMgMjEuN0w0OC40IDIyLjdDNTMuMiAyNy40IDU4LjggMzUuNCA1OC41IDQ2LjhMNDkuMyA1OS44SDMxLjhMMjIuNSA0Ni45Wk0zMi45IDYyLjVINDhMNTcuOCA2OS44SDIzLjJMMzIuOSA2Mi41WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTM2LjIgMThINDEuMUwzOC40IDIwLjFIMzQuNiIgZmlsbD0iYmxhY2siLz4KPC9zdmc+Cg==);
@@ -191,5 +191,48 @@
   }
   .rook.white {
     background-image: var(--sharechess-rw-url) !important;
+  }
+}
+
+@-moz-document domain("chessgames.com") {
+  [class^="piece-"] {
+    filter: none;
+  }
+
+  [src$="bB.png"] {
+    content: var(--sharechess-bb-url) !important;
+  }
+  [src$="wB.png"] {
+    content: var(--sharechess-bw-url) !important;
+  }
+  [src$="bK.png"] {
+    content: var(--sharechess-kb-url) !important;
+  }
+  [src$="wK.png"] {
+    content: var(--sharechess-kw-url) !important;
+  }
+  [src$="bN.png"] {
+    content: var(--sharechess-nb-url) !important;
+  }
+  [src$="wN.png"] {
+    content: var(--sharechess-nw-url) !important;
+  }
+  [src$="bP.png"] {
+    content: var(--sharechess-pb-url) !important;
+  }
+  [src$="wP.png"] {
+    content: var(--sharechess-pw-url) !important;
+  }
+  [src$="bQ.png"] {
+    content: var(--sharechess-qb-url) !important;
+  }
+  [src$="wQ.png"] {
+    content: var(--sharechess-qw-url) !important;
+  }
+  [src$="bR.png"] {
+    content: var(--sharechess-rb-url) !important;
+  }
+  [src$="wR.png"] {
+    content: var(--sharechess-rw-url) !important;
   }
 }

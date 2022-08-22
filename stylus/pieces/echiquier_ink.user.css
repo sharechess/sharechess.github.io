@@ -2,12 +2,12 @@
     @name           Echiquier Ink piece set
     @namespace      sharechess.github.io
     @version        1.1.0
-    @description    Piece set for lichess.org, chess.com, openingtree.com
+    @description    Piece set for lichess.org, chess.com, openingtree.com, chessgames.com
     @author         Vincent Tellier (color variant by caderek)
     @license        CC BY-SA 4.0
     ==/UserStyle== */
 
-@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com) {
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com) {
   :root {
     --sharechess-bb-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNjIuODQwMiAyMjYuOTE1QzYyLjkyMTkgMjI5Ljg2OCA2NS45Njc1IDIyOSA2NS45Njc1IDIyOUgxOTUuMjNDMTc3LjY0NiAyMTYuNDgxIDE2Ni45NDEgMjE1LjE3MiAxNTYuNjYgMjEzLjM2M0MxODEuMzc4IDE5MS4wOTUgMTg0LjI3OSAxNTMuOTk0IDE4My43NjMgMTM3LjA4NUMxODMuMjQ4IDEyMC4xNzYgMTcxLjYzOCA4Ny45NzIzIDE0MS4yNDkgNjAuOTE2MUMxNDMuNjQ0IDU1Ljc3NyAxNDQuMjg5IDQ5Ljc5NzQgMTQyLjc0IDQ1LjA4MzlDMTQxLjE5IDQwLjM3MDMgMTM0LjgwMSAzMy4zODA2IDEyNS4zODcgMzMuMDIwNkMxMDkuNjI1IDMyLjQxNzcgMTA2LjA3IDQ1LjIxOTMgMTA1LjU4IDUwLjc0MjFDMTA1LjA5IDU2LjI2NDkgMTA4LjA5NyA2NC45OTM0IDExNi4wMDUgNzAuNTQ4NUMxMjMuOTEyIDc2LjEwMzUgMTQ2LjQ4NSA5Mi4wMDY3IDE0Mi4wNjYgMTM1LjE4QzEzNy42NDcgMTc4LjM1MyAxMTAuMjE0IDE5MS4xMyA5Mi4wMjg1IDIwMi45MzlDNzMuODQyOCAyMTQuNzQ3IDYyLjY5NzMgMjIxLjc1MyA2Mi44NDAyIDIyNi45MTVaTTEwNC41MzggNzAuNTQ4NUMxMDcuMDM0IDY5Ljc2NzIgOTMuNzM3MyA4MC43NjU1IDg5Ljk0MzcgOTUuNTY3MUM4Ni4xNSAxMTAuMzY5IDk3Ljc0NDggMTI3LjQ4NSAxMDQuNTM4IDE0MS40MzVDMTExLjMzMSAxNTUuMzg0IDExMS4zMyAxNzMuNjQgMTAxLjQxMSAxODEuMDQ3QzkxLjQ5MTMgMTg4LjQ1NSA2OS40NDMxIDE4Ny4zOTkgNjAuNzU1MyAxNDkuNzc0QzU4LjQyNTQgMTM5LjYxOSA2Mi4xNjc1IDEyOS41MjYgNjIuODQwMiAxMjUuNzk4QzcxLjM5NjggMTM1LjA0IDc3LjgyMTIgMTQ4LjEyIDgxLjYwNDEgMTU4LjExNEM4NS44OTUzIDE1Mi4zMzYgODIuMjk5NCAxNDIuMzQgNzkuNTE5MiAxMzMuMDk1Qzc2LjczOSAxMjMuODUgNzMuMTUwNyAxMTUuODAzIDY5LjA5NDkgMTEwLjE2MUM3Ni43NDIzIDg1LjQ0MTQgMTAyLjQxNiA3MS4yMTI2IDEwNC41MzggNzAuNTQ4NVoiIGZpbGw9IiMxQjI2MkMiIHN0cm9rZT0iIzFCMjYyQyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
     --sharechess-bw-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNjIuODQwMiAyMjYuOTE1QzYyLjkyMTkgMjI5Ljg3IDY1Ljk2NzUgMjI5IDY1Ljk2NzUgMjI5SDE5NS4yM0MxNzcuNjQ2IDIxNi40OCAxNjYuOTQxIDIxNS4xNjggMTU2LjY2IDIxMy4zNjNDMTgxLjM3OCAxOTEuMDk2IDE4NC4yNzkgMTUzLjk5OCAxODMuNzYzIDEzNy4wODJDMTgzLjI0OCAxMjAuMTY3IDE3MS42MzggODcuOTY5MSAxNDEuMjQ5IDYwLjkxOTNDMTQzLjY0NCA1NS43ODI0IDE0NC4yODkgNDkuNzk2NCAxNDIuNzQgNDUuMDg5M0MxNDEuMTkgNDAuMzgyMiAxMzQuODAxIDMzLjM4NTkgMTI1LjM4NyAzMy4wMjA1QzEwOS42MjUgMzIuNDE4NyAxMDYuMDcgNDUuMjE4MyAxMDUuNTggNTAuNzQyMUMxMDUuMDkgNTYuMjY2IDEwOC4wOTcgNjQuOTkyNCAxMTYuMDA1IDcwLjU0ODVDMTIzLjkxMiA3Ni4xMDQ2IDE0Ni40ODUgOTIuMDA5OSAxNDIuMDY2IDEzNS4xOEMxMzcuNjQ3IDE3OC4zNSAxMTAuMjE0IDE5MS4xMjggOTIuMDI4NSAyMDIuOTM5QzczLjg0MjggMjE0Ljc0OSA2Mi42OTczIDIyMS43NTYgNjIuODQwMiAyMjYuOTE1Wk0xMDQuNTM4IDcwLjU0ODVDMTA3LjAzNCA2OS43NjM5IDkzLjczNzMgODAuNzY4NyA4OS45NDM3IDk1LjU2NzFDODYuMTUgMTEwLjM2NSA5Ny43NDQ4IDEyNy40ODUgMTA0LjUzOCAxNDEuNDM0QzExMS4zMzEgMTU1LjM4NCAxMTEuMzMgMTczLjY0MyAxMDEuNDExIDE4MS4wNDdDOTEuNDkxMyAxODguNDUyIDY5LjQ0MzEgMTg3LjM5OSA2MC43NTUzIDE0OS43NzRDNTguNDI1NCAxMzkuNjE4IDYyLjE2NzUgMTI5LjUyNyA2Mi44NDAyIDEyNS43OThDNzEuMzk2OCAxMzUuMDQgNzcuODIxMiAxNDguMTE5IDgxLjYwNDEgMTU4LjExNEM4NS44OTUzIDE1Mi4zNDMgODIuMjk5NCAxNDIuMzM3IDc5LjUxOTIgMTMzLjA5NUM3Ni43MzkgMTIzLjg1MyA3My4xNTA3IDExNS44MDMgNjkuMDk0OSAxMTAuMTYxQzc2Ljc0MjMgODUuNDQzNSAxMDIuNDE2IDcxLjIxNDggMTA0LjUzOCA3MC41NDg1WiIgZmlsbD0iI0JCRTFGQSIgc3Ryb2tlPSIjMEY0Qzc1IiBzdHJva2Utd2lkdGg9IjUuMzczNDEiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==);
@@ -191,5 +191,48 @@
   }
   .rook.white {
     background-image: var(--sharechess-rw-url) !important;
+  }
+}
+
+@-moz-document domain("chessgames.com") {
+  [class^="piece-"] {
+    filter: none;
+  }
+
+  [src$="bB.png"] {
+    content: var(--sharechess-bb-url) !important;
+  }
+  [src$="wB.png"] {
+    content: var(--sharechess-bw-url) !important;
+  }
+  [src$="bK.png"] {
+    content: var(--sharechess-kb-url) !important;
+  }
+  [src$="wK.png"] {
+    content: var(--sharechess-kw-url) !important;
+  }
+  [src$="bN.png"] {
+    content: var(--sharechess-nb-url) !important;
+  }
+  [src$="wN.png"] {
+    content: var(--sharechess-nw-url) !important;
+  }
+  [src$="bP.png"] {
+    content: var(--sharechess-pb-url) !important;
+  }
+  [src$="wP.png"] {
+    content: var(--sharechess-pw-url) !important;
+  }
+  [src$="bQ.png"] {
+    content: var(--sharechess-qb-url) !important;
+  }
+  [src$="wQ.png"] {
+    content: var(--sharechess-qw-url) !important;
+  }
+  [src$="bR.png"] {
+    content: var(--sharechess-rb-url) !important;
+  }
+  [src$="wR.png"] {
+    content: var(--sharechess-rw-url) !important;
   }
 }

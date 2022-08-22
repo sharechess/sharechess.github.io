@@ -2,12 +2,12 @@
     @name           Pixel Neon piece set
     @namespace      sharechess.github.io
     @version        1.1.0
-    @description    Piece set for lichess.org, chess.com, openingtree.com
+    @description    Piece set for lichess.org, chess.com, openingtree.com, chessgames.com
     @author         therealqtpi (color variant by caderek)
     @license        AGPLv3+
     ==/UserStyle== */
 
-@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com) {
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com) {
   :root {
     --sharechess-bb-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDFIN1YySDZWNEg3VjVINlY2SDVWN0g0VjExSDVWMTJINFYxM0gzVjE1SDEzVjEzSDEyVjEySDExVjExSDEyVjdIMTFWNkgxMFY1SDlWNEgxMFYySDlWMVpNMTAgN1Y2SDlWN0g4VjhIOVY3SDEwWiIgZmlsbD0iIzExMTExMSIvPgo8cGF0aCBkPSJNNyAyVjRIOVYySDdaIiBmaWxsPSIjM0QyQzhEIi8+CjxwYXRoIGQ9Ik00IDE0VjEzSDEyVjE0SDRaIiBmaWxsPSIjM0QyQzhEIi8+CjxwYXRoIGQ9Ik03IDVIOVY4SDhWOUg5VjhIMTBWN0gxMVYxMUgxMFYxMkg2VjExSDVWN0g2VjZIN1Y1WiIgZmlsbD0iIzNEMkM4RCIvPgo8cGF0aCBkPSJNOCAySDdWNEg4VjJaIiBmaWxsPSIjOTE2QkJGIi8+CjxwYXRoIGQ9Ik02IDdINVYxMUg2VjEySDdWMTFINlY3WiIgZmlsbD0iIzkxNkJCRiIvPgo8cGF0aCBkPSJNNCAxNFYxM0g2VjE0SDRaIiBmaWxsPSIjOTE2QkJGIi8+CjxwYXRoIGQ9Ik03IDJIOFYzSDdWMloiIGZpbGw9IiNDOTk2Q0MiLz4KPHBhdGggZD0iTTUgN1Y4SDZWN0g3VjZINlY3SDVaIiBmaWxsPSIjQzk5NkNDIi8+CjxwYXRoIGQ9Ik05IDJIOFY0SDlWMloiIGZpbGw9IiMxQzBDNUIiLz4KPHBhdGggZD0iTTkgNUg4VjZIOVY3SDEwVjExSDlWMTJIMTBWMTFIMTFWN0gxMFY2SDlWNVoiIGZpbGw9IiMxQzBDNUIiLz4KPHBhdGggZD0iTTkgMTRWMTNIMTJWMTRIOVoiIGZpbGw9IiMxQzBDNUIiLz4KPC9zdmc+Cg==);
     --sharechess-bw-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDFIN1YySDZWNEg3VjVINlY2SDVWN0g0VjExSDVWMTJINFYxM0gzVjE1SDEzVjEzSDEyVjEySDExVjExSDEyVjdIMTFWNkgxMFY1SDlWNEgxMFYySDlWMVpNMTAgN1Y2SDlWN0g4VjhIOVY3SDEwWiIgZmlsbD0iIzExMTExMSIvPgo8cGF0aCBkPSJNNyAyVjRIOVYySDdaIiBmaWxsPSIjRkYzRDY4Ii8+CjxwYXRoIGQ9Ik00IDE0VjEzSDEyVjE0SDRaIiBmaWxsPSIjRkYzRDY4Ii8+CjxwYXRoIGQ9Ik05IDVIN1Y2SDZWN0g1VjExSDZWMTJIMTBWMTFIMTFWN0gxMFY4SDlWOUg4VjhIOVY3VjZWNVoiIGZpbGw9IiNGRjNENjgiLz4KPHBhdGggZD0iTTggMkg3VjRIOFYyWiIgZmlsbD0iI0ZGNjc2NyIvPgo8cGF0aCBkPSJNNiA3SDVWMTFINlYxMkg3VjExSDZWN1oiIGZpbGw9IiNGRjY3NjciLz4KPHBhdGggZD0iTTQgMTRWMTNINlYxNEg0WiIgZmlsbD0iI0ZGNjc2NyIvPgo8cGF0aCBkPSJNNyAySDhWM0g3VjJaIiBmaWxsPSIjRkFBRDgwIi8+CjxwYXRoIGQ9Ik01IDdWOEg2VjdIN1Y2SDZWN0g1WiIgZmlsbD0iI0ZBQUQ4MCIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTkgMkg4VjRIOVYyWk05IDVIOFY2SDlWN0gxMFYxMUg5VjEySDEwVjExSDExVjdIMTBWNkg5VjVaTTkgMTRWMTNIMTJWMTRIOVoiIGZpbGw9IiNBNzM0ODkiLz4KPC9zdmc+Cg==);
@@ -191,5 +191,48 @@
   }
   .rook.white {
     background-image: var(--sharechess-rw-url) !important;
+  }
+}
+
+@-moz-document domain("chessgames.com") {
+  [class^="piece-"] {
+    filter: none;
+  }
+
+  [src$="bB.png"] {
+    content: var(--sharechess-bb-url) !important;
+  }
+  [src$="wB.png"] {
+    content: var(--sharechess-bw-url) !important;
+  }
+  [src$="bK.png"] {
+    content: var(--sharechess-kb-url) !important;
+  }
+  [src$="wK.png"] {
+    content: var(--sharechess-kw-url) !important;
+  }
+  [src$="bN.png"] {
+    content: var(--sharechess-nb-url) !important;
+  }
+  [src$="wN.png"] {
+    content: var(--sharechess-nw-url) !important;
+  }
+  [src$="bP.png"] {
+    content: var(--sharechess-pb-url) !important;
+  }
+  [src$="wP.png"] {
+    content: var(--sharechess-pw-url) !important;
+  }
+  [src$="bQ.png"] {
+    content: var(--sharechess-qb-url) !important;
+  }
+  [src$="wQ.png"] {
+    content: var(--sharechess-qw-url) !important;
+  }
+  [src$="bR.png"] {
+    content: var(--sharechess-rb-url) !important;
+  }
+  [src$="wR.png"] {
+    content: var(--sharechess-rw-url) !important;
   }
 }

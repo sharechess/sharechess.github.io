@@ -2,12 +2,12 @@
     @name           Reillycraig piece set
     @namespace      sharechess.github.io
     @version        1.1.0
-    @description    Piece set for lichess.org, chess.com, openingtree.com
+    @description    Piece set for lichess.org, chess.com, openingtree.com, chessgames.com
     @author         Reilly Craig 
     @license        "free of charge"
     ==/UserStyle== */
 
-@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com) {
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com) {
   :root {
     --sharechess-bb-url: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjEiIHZpZXdCb3g9Ii00OC4zNSAtMTAgMjIwIDIyMCIgd2lkdGg9IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHN3aXRjaD48Zz48cGF0aCBkPSJNMzAuNCAxNjguN2MtMTMuOC05LjQtMjMuNy0yNS44LTI2LjMtNDIuNEMxLjMgMTA4LjUgNi42IDkwLjUgMTUgNzVjNC42LTguNSAxMC4xLTE2LjUgMTYuMS0yNGwyMi43IDMxIDE2LTE2LjMtMjMuNy0zMS41YzUtNS4yIDEwLjMtMTAuMSAxNS42LTE1aC0uMWMxMDkuNiA5OC4yIDMxLjMgMTQ5LjUgMzEuMyAxNDkuNSIvPjxwYXRoIGQ9Ik0zMC40IDE2OC43Yy0xMy44LTkuNC0yMy43LTI1LjgtMjYuMy00Mi40QzEuMyAxMDguNSA2LjYgOTAuNSAxNSA3NWM0LjYtOC41IDEwLjEtMTYuNSAxNi4xLTI0bDIyLjcgMzEgMTYtMTYuMy0yMy43LTMxLjVjNS01LjIgMTAuMy0xMC4xIDE1LjYtMTVoLS4xYzEwOS42IDk4LjIgMzEuMyAxNDkuNSAzMS4zIDE0OS41IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSI2Ii8+PHBhdGggZD0iTTY5LjUgMTEuMmMwIDQuNC0zLjUgOC03LjkgOHMtNy45LTMuNi03LjktOCAzLjUtOCA3LjktOCA3LjkgMy42IDcuOSA4Ii8+PGVsbGlwc2UgY3g9IjYxLjYiIGN5PSIxMS4yIiBmaWxsPSJub25lIiByeD0iNy45IiByeT0iOCIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iNiIvPjxwYXRoIGQ9Ik0xNS40IDE3Ni42di03LjlIMTA4djcuOSIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0xNS40IDE3Ni42di03LjlIMTA4djcuOSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iNiIvPjxwYXRoIGQ9Ik02MS43IDE3Ni42SDE1LjR2MTUuN0gxMDh2LTE1Ljd6Ii8+PHBhdGggZD0iTTYxLjcgMTc2LjZIMTUuNHYxNS43SDEwOHYtMTUuN3oiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjYiLz48L2c+PC9zd2l0Y2g+PC9zdmc+);
     --sharechess-bw-url: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjEiIHZpZXdCb3g9Ii00Ny44NSAtMTAgMjIwIDIyMCIgd2lkdGg9IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHN3aXRjaD48Zz48cGF0aCBkPSJNMzAuOCAxNjguOEMxNyAxNTkuNSA3LjEgMTQzIDQuNSAxMjYuNCAxLjYgMTA4LjYgNyA5MC43IDE1LjMgNzUuMWM0LjYtOC41IDEwLjEtMTYuNSAxNi4xLTI0bDIyLjcgMzEgMTYtMTYuMy0yMy43LTMxLjVjNS01LjIgMTAuMy0xMC4xIDE1LjYtMTUgMTA5LjYgOTguMiAzMS4zIDE0OS41IDMxLjMgMTQ5LjUiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMzAuOCAxNjguOEMxNyAxNTkuNSA3LjEgMTQzIDQuNSAxMjYuNCAxLjYgMTA4LjYgNyA5MC43IDE1LjMgNzUuMWM0LjYtOC41IDEwLjEtMTYuNSAxNi4xLTI0bDIyLjcgMzEgMTYtMTYuMy0yMy43LTMxLjVjNS01LjIgMTAuMy0xMC4xIDE1LjYtMTUgMTA5LjYgOTguMiAzMS4zIDE0OS41IDMxLjMgMTQ5LjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjYiLz48cGF0aCBkPSJNNjkuOSAxMS40YzAgNC40LTMuNSA4LTcuOSA4LTQuMyAwLTcuOS0zLjYtNy45LThzMy41LTggNy45LThjNC4zLS4xIDcuOSAzLjUgNy45IDgiIGZpbGw9IiNmZmYiLz48ZWxsaXBzZSBjeD0iNjIiIGN5PSIxMS40IiBmaWxsPSJub25lIiByeD0iNy45IiByeT0iOCIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iNiIvPjxwYXRoIGQ9Ik0xNS44IDE3Ni43di03LjloOTIuNXY3LjkiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMTUuOCAxNzYuN3YtNy45aDkyLjV2Ny45IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSI2Ii8+PHBhdGggZD0iTTYyLjEgMTc2LjdIMTUuOHYxNS43aDkyLjV2LTE1Ljd6IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0iTTYyLjEgMTc2LjdIMTUuOHYxNS43aDkyLjV2LTE1Ljd6IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSI2Ii8+PC9nPjwvc3dpdGNoPjwvc3ZnPg==);
@@ -191,5 +191,48 @@
   }
   .rook.white {
     background-image: var(--sharechess-rw-url) !important;
+  }
+}
+
+@-moz-document domain("chessgames.com") {
+  [class^="piece-"] {
+    filter: none;
+  }
+
+  [src$="bB.png"] {
+    content: var(--sharechess-bb-url) !important;
+  }
+  [src$="wB.png"] {
+    content: var(--sharechess-bw-url) !important;
+  }
+  [src$="bK.png"] {
+    content: var(--sharechess-kb-url) !important;
+  }
+  [src$="wK.png"] {
+    content: var(--sharechess-kw-url) !important;
+  }
+  [src$="bN.png"] {
+    content: var(--sharechess-nb-url) !important;
+  }
+  [src$="wN.png"] {
+    content: var(--sharechess-nw-url) !important;
+  }
+  [src$="bP.png"] {
+    content: var(--sharechess-pb-url) !important;
+  }
+  [src$="wP.png"] {
+    content: var(--sharechess-pw-url) !important;
+  }
+  [src$="bQ.png"] {
+    content: var(--sharechess-qb-url) !important;
+  }
+  [src$="wQ.png"] {
+    content: var(--sharechess-qw-url) !important;
+  }
+  [src$="bR.png"] {
+    content: var(--sharechess-rb-url) !important;
+  }
+  [src$="wR.png"] {
+    content: var(--sharechess-rw-url) !important;
   }
 }
