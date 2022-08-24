@@ -1,13 +1,13 @@
 /* ==UserStyle==
-    @name           Pixel Juicy Shadows piece set
+    @name           Custom pieces
     @namespace      sharechess.github.io
-    @version        1.2.0
-    @description    Piece set for lichess.org, chess.com, openingtree.com, chessgames.com
+    @version        1.3.0
+    @description    Pixel Juicy Shadows piece set for lichess.org, chess.com, openingtree.com, chessgames.com, chess24.com
     @author         therealqtpi (color variant by caderek)
     @license        AGPLv3+
     ==/UserStyle== */
 
-@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com) {
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com), domain(chess24.com) {
   :root {
     --sharechess-bb-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDFIN1YySDZWNEg3VjVINlY2SDVWN0g0VjExSDVWMTJINFYxM0gzVjE1SDEzVjEzSDEyVjEySDExVjExSDEyVjdIMTFWNkgxMFY1SDlWNEgxMFYySDlWMVpNMTAgN1Y2SDlWN0g4VjhIOVY3SDEwWiIgZmlsbD0iIzExMTExMSIvPgo8cGF0aCBkPSJNNyAyVjRIOVYySDdaIiBmaWxsPSIjMTEzQ0ZDIi8+CjxwYXRoIGQ9Ik00IDE0VjEzSDEyVjE0SDRaIiBmaWxsPSIjMTEzQ0ZDIi8+CjxwYXRoIGQ9Ik03IDVIOVY4SDhWOUg5VjhIMTBWN0gxMVYxMUgxMFYxMkg2VjExSDVWN0g2VjZIN1Y1WiIgZmlsbD0iIzExM0NGQyIvPgo8cGF0aCBkPSJNOCAySDdWNEg4VjJaIiBmaWxsPSIjMTU5N0U1Ii8+CjxwYXRoIGQ9Ik02IDdINVYxMUg2VjEySDdWMTFINlY3WiIgZmlsbD0iIzE1OTdFNSIvPgo8cGF0aCBkPSJNNCAxNFYxM0g2VjE0SDRaIiBmaWxsPSIjMTU5N0U1Ii8+CjxwYXRoIGQ9Ik03IDJIOFYzSDdWMloiIGZpbGw9IiM2OURBREIiLz4KPHBhdGggZD0iTTUgN1Y4SDZWN0g3VjZINlY3SDVaIiBmaWxsPSIjNjlEQURCIi8+CjxwYXRoIGQ9Ik05IDJIOFY0SDlWMloiIGZpbGw9IiMxOTM0OTgiLz4KPHBhdGggZD0iTTkgNUg4VjZIOVY3SDEwVjExSDlWMTJIMTBWMTFIMTFWN0gxMFY2SDlWNVoiIGZpbGw9IiMxOTM0OTgiLz4KPHBhdGggZD0iTTkgMTRWMTNIMTJWMTRIOVoiIGZpbGw9IiMxOTM0OTgiLz4KPC9zdmc+Cg==);
     --sharechess-bw-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDFIN1YySDZWNEg3VjVINlY2SDVWN0g0VjExSDVWMTJINFYxM0gzVjE1SDEzVjEzSDEyVjEySDExVjExSDEyVjdIMTFWNkgxMFY1SDlWNEgxMFYySDlWMVpNMTAgN1Y2SDlWN0g4VjhIOVY3SDEwWiIgZmlsbD0iIzExMTExMSIvPgo8cGF0aCBkPSJNNyAyVjRIOVYySDdaIiBmaWxsPSIjRjk4NDA0Ii8+CjxwYXRoIGQ9Ik00IDE0VjEzSDEyVjE0SDRaIiBmaWxsPSIjRjk4NDA0Ii8+CjxwYXRoIGQ9Ik05IDVIN1Y2SDZWN0g1VjExSDZWMTJIMTBWMTFIMTFWN0gxMFY4SDlWOUg4VjhIOVY3VjZWNVoiIGZpbGw9IiNGOTg0MDQiLz4KPHBhdGggZD0iTTggMkg3VjRIOFYyWiIgZmlsbD0iI0Y5QjIwOCIvPgo8cGF0aCBkPSJNNiA3SDVWMTFINlYxMkg3VjExSDZWN1oiIGZpbGw9IiNGOUIyMDgiLz4KPHBhdGggZD0iTTQgMTRWMTNINlYxNEg0WiIgZmlsbD0iI0Y5QjIwOCIvPgo8cGF0aCBkPSJNNyAySDhWM0g3VjJaIiBmaWxsPSIjRjdGRDA0Ii8+CjxwYXRoIGQ9Ik01IDdWOEg2VjdIN1Y2SDZWN0g1WiIgZmlsbD0iI0Y3RkQwNCIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTkgMkg4VjRIOVYyWk05IDVIOFY2SDlWN0gxMFYxMUg5VjEySDEwVjExSDExVjdIMTBWNkg5VjVaTTkgMTRWMTNIMTJWMTRIOVoiIGZpbGw9IiNGQzU0MDQiLz4KPC9zdmc+Cg==);
@@ -233,6 +233,49 @@
     content: var(--sharechess-rb-url) !important;
   }
   [src$="wR.png"] {
+    content: var(--sharechess-rw-url) !important;
+  }
+}
+
+@-moz-document domain("chess24.com") {
+  img.piece {
+    filter: drop-shadow(0.3vh 0.3vh 0.2vh #00000088);
+  }
+
+  img.piece.black[src$="b.png"] {
+    content: var(--sharechess-bb-url) !important;
+  }
+  img.piece.white[src$="b.png"] {
+    content: var(--sharechess-bw-url) !important;
+  }
+  img.piece.black[src$="k.png"] {
+    content: var(--sharechess-kb-url) !important;
+  }
+  img.piece.white[src$="k.png"] {
+    content: var(--sharechess-kw-url) !important;
+  }
+  img.piece.black[src$="n.png"] {
+    content: var(--sharechess-nb-url) !important;
+  }
+  img.piece.white[src$="n.png"] {
+    content: var(--sharechess-nw-url) !important;
+  }
+  img.piece.black[src$="p.png"] {
+    content: var(--sharechess-pb-url) !important;
+  }
+  img.piece.white[src$="p.png"] {
+    content: var(--sharechess-pw-url) !important;
+  }
+  img.piece.black[src$="q.png"] {
+    content: var(--sharechess-qb-url) !important;
+  }
+  img.piece.white[src$="q.png"] {
+    content: var(--sharechess-qw-url) !important;
+  }
+  img.piece.black[src$="r.png"] {
+    content: var(--sharechess-rb-url) !important;
+  }
+  img.piece.white[src$="r.png"] {
     content: var(--sharechess-rw-url) !important;
   }
 }

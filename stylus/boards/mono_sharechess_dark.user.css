@@ -1,12 +1,12 @@
 /* ==UserStyle==
-    @name           Mono Sharechess Dark board
+    @name           Custom chessboard
     @namespace      sharechess.github.io
-    @version        1.2.0
-    @description    Chessboard for lichess.org, chess.com, openingtree.com, chessgames.com
+    @version        1.3.0
+    @description    Mono Sharechess Dark for lichess.org, chess.com, openingtree.com, chessgames.com, chess24.com
     @author         sharechess.github.io
     ==/UserStyle== */
 
-@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com) {
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com), domain(chess24.com) {
   :root {
     --sharechess-board-url: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAASwAQMAAADR7yGMAAAABlBMVEUXFx8gJCpzEOknAAADEklEQVR42u3cwQnDUAxEwQ8uwCW5dZeUAgxJAe9ijHMQzB6FJKaCXd/kWsnerbNbL75aWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYj1jN1sNPt45u/fUVFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhbWnVcd6WnGwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwprLavQ0Y2FhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWHNZXWkpxkLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLay6r0dOMhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhTWX1ZGeZiwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCysuaxGTzMWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYW1ljWD+8iRPOPKpVuAAAAAElFTkSuQmCC);
   }
@@ -81,5 +81,20 @@
   [class*="highlight2"] {
     background: #00ad8833 !important;
     box-shadow: none;
+  }
+}
+
+@-moz-document domain("chess24.com") {
+  .chess-board .svg {
+    background-image: var(--sharechess-board-url) !important;
+    background-size: cover !important;
+    opacity: 1 !important;
+    border-radius: 2.8%;
+  }
+
+  .chess-board .svg > * {
+    opacity: 0.6 !important;
+    filter: brightness(0.3392156862745098) sepia(1)
+      hue-rotate(167.16763005780348deg) saturate(100);
   }
 }

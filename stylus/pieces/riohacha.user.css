@@ -1,13 +1,13 @@
 /* ==UserStyle==
-    @name           Riohacha piece set
+    @name           Custom pieces
     @namespace      sharechess.github.io
-    @version        1.2.0
-    @description    Piece set for lichess.org, chess.com, openingtree.com, chessgames.com
+    @version        1.3.0
+    @description    Riohacha piece set for lichess.org, chess.com, openingtree.com, chessgames.com, chess24.com
     @author         the lila authors 
     @license        AGPLv3+
     ==/UserStyle== */
 
-@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com) {
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com), domain(chess24.com) {
   :root {
     --sharechess-bb-url: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTMzIiB2aWV3Qm94PSIzODkwIDEzNTAgMTMzMCAxMzMwIiB3aWR0aD0iMTMzIj48cGF0aCBkPSJNNDE4MCAyNTAwdi0xMDBoMTg2bDM4LTE2MmMyMS05MCA0MC0xNjggNDMtMTc0IDItNi0zMC01NC03Mi0xMDctNDEtNTQtNzUtMTAyLTc1LTEwOHMyMS0zOCA0Ny03MWw0Ny02MSAyNiAzMSAyNyAzMiAzMi00NSAzMi00NS0yMC0yOWMtMTItMTYtMjEtMzItMjEtMzYgMC0xMCA5Mi0xMjUgOTktMTI1IDMgMSAzNyA0MiA3NiA5MyAzOCA1MCA5OSAxMjggMTMzIDE3NGw2NCA4Mi03OCAxMDEtNzggMTAxIDMyIDEzN2MxOCA3NSAzNyAxNTQgNDMgMTc1bDEwIDM3aDE3OXYyMDBoLTc3MHoiIGZpbGw9IiM1NjUyNTIiLz48cGF0aCBkPSJNNDk1MCAyNTAwdi0xMDBoLTE3OWwtMTAtMzdjLTYtMjEtMjUtMTAwLTQzLTE3NWwtMzItMTM3IDc3LTEwMGM0Mi01NSA3Ny0xMDEgNzctMTAzcy01NC0xLTExOSAybC0xMTkgNS03MiA5M2MtMzkgNTAtNzQgOTItNzggOTJzLTggMTEtOCAyNWMtMSAxNCAyIDI1IDYgMjUgNSAwIDM4IDE4IDc0IDQxbDY0IDQwIDcgOTdjOSAxMzQgOCAxMzIgNjEgMTMyaDQ0djIwMGgyNTB6bS00MjItNjk5YzE4LTIyIDMyLTQzIDMyLTQ4IDAtNC0xMC0yMS0yMy0zN2wtMjMtMjktMzYgNDktMzYgNDggMjEgMjhjMTEgMTUgMjQgMjggMjcgMjggNCAwIDIxLTE4IDM4LTM5eiIgZmlsbD0iIzQ0NDI0MiIvPjxwYXRoIGQ9Ik00NzAwIDI1MDB2LTEwMGgtNDRjLTUzIDAtNTIgMi02MS0xMzJsLTctOTctNjQtNDBjLTM2LTIzLTY5LTQxLTczLTQxLTcgMC0yMCA0Ni02MyAyMjNsLTIxIDg3aC0xODd2MjAwaDUyMHptLTE2OC01NTVsNzMtOTVoMTEyYzYyIDAgMTEzLTMgMTEyLTcgMC05LTMxLTUwLTE1Ny0yMDgtNTAtNjQtOTItMTIxLTkyLTEyNiAwLTIwLTE4LTUtNjMgNTZsLTQ4IDY0IDQ1IDU4YzI1IDMyIDQ2IDYyIDQ2IDY2IDAgMTEtNjEgODctNzAgODctNCAwLTI2LTI3LTUwLTYwLTI0LTMyLTQ2LTU3LTUxLTU1LTQgMy0yNiAzMy00OSA2NmwtNDEgNjEgNDcgNjFjMjcgMzQgNjAgNzcgNzQgOTQgMTQgMTggMjggMzMgMzIgMzNzNDAtNDMgODAtOTV6IiBmaWxsPSIjNTY1MjUyIi8+PHBhdGggZD0iTTQxODAgMjUwMHYtMTAwaDE4NmwzOC0xNjJjMjEtOTAgNDAtMTY4IDQzLTE3NCAyLTYtMzAtNTQtNzItMTA3LTQxLTU0LTc1LTEwMi03NS0xMDhzMjEtMzggNDctNzFsNDctNjEgMjYgMzEgMjcgMzIgMzItNDUgMzItNDUtMjAtMjljLTEyLTE2LTIxLTMyLTIxLTM2IDAtMTAgOTItMTI1IDk5LTEyNSAzIDEgMzcgNDIgNzYgOTMgMzggNTAgOTkgMTI4IDEzMyAxNzRsNjQgODItNzggMTAxLTc4IDEwMSAzMiAxMzdjMTggNzUgMzcgMTU0IDQzIDE3NWwxMCAzN2gxNzl2MjAwaC03NzB6IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMjQiLz48L3N2Zz4=);
     --sharechess-bw-url: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTMzIiB2aWV3Qm94PSIzODkwIDEzNTAgMTMzMCAxMzMwIiB3aWR0aD0iMTMzIj48cGF0aCBkPSJNNDE4MCAyNTAwdi0xMDBoMTg2bDM4LTE2MmMyMS05MCA0MC0xNjggNDMtMTc0IDItNi0zMC01NC03Mi0xMDctNDEtNTQtNzUtMTAyLTc1LTEwOHMyMS0zOCA0Ny03MWw0Ny02MSAyNiAzMSAyNyAzMiAzMi00NSAzMi00NS0yMC0yOWMtMTItMTYtMjEtMzItMjEtMzYgMC0xMCA5Mi0xMjUgOTktMTI1IDMgMSAzNyA0MiA3NiA5MyAzOCA1MCA5OSAxMjggMTMzIDE3NGw2NCA4Mi03OCAxMDEtNzggMTAxIDMyIDEzN2MxOCA3NSAzNyAxNTQgNDMgMTc1bDEwIDM3aDE3OXYyMDBoLTc3MHoiIGZpbGw9IiNmOGY4ZjgiLz48cGF0aCBkPSJNNDk1MCAyNTAwdi0xMDBoLTE3OWwtMTAtMzdjLTYtMjEtMjUtMTAwLTQzLTE3NWwtMzItMTM3IDc3LTEwMGM0Mi01NSA3Ny0xMDEgNzctMTAzcy01NC0xLTExOSAybC0xMTkgNS03MiA5M2MtMzkgNTAtNzQgOTItNzggOTJzLTggMTEtOCAyNWMtMSAxNCAyIDI1IDYgMjUgNSAwIDM4IDE4IDc0IDQxbDY0IDQwIDcgOTdjOSAxMzQgOCAxMzIgNjEgMTMyaDQ0djIwMGgyNTB6bS00MjItNjk5YzE4LTIyIDMyLTQzIDMyLTQ4IDAtNC0xMC0yMS0yMy0zN2wtMjMtMjktMzYgNDktMzYgNDggMjEgMjhjMTEgMTUgMjQgMjggMjcgMjggNCAwIDIxLTE4IDM4LTM5eiIgZmlsbD0iI2QzZDNkMyIvPjxwYXRoIGQ9Ik00NzAwIDI1MDB2LTEwMGgtNDRjLTUzIDAtNTIgMi02MS0xMzJsLTctOTctNjQtNDBjLTM2LTIzLTY5LTQxLTczLTQxLTcgMC0yMCA0Ni02MyAyMjNsLTIxIDg3aC0xODd2MjAwaDUyMHptLTE2OC01NTVsNzMtOTVoMTEyYzYyIDAgMTEzLTMgMTEyLTcgMC05LTMxLTUwLTE1Ny0yMDgtNTAtNjQtOTItMTIxLTkyLTEyNiAwLTIwLTE4LTUtNjMgNTZsLTQ4IDY0IDQ1IDU4YzI1IDMyIDQ2IDYyIDQ2IDY2IDAgMTEtNjEgODctNzAgODctNCAwLTI2LTI3LTUwLTYwLTI0LTMyLTQ2LTU3LTUxLTU1LTQgMy0yNiAzMy00OSA2NmwtNDEgNjEgNDcgNjFjMjcgMzQgNjAgNzcgNzQgOTQgMTQgMTggMjggMzMgMzIgMzNzNDAtNDMgODAtOTV6IiBmaWxsPSIjZjhmOGY4Ii8+PHBhdGggZD0iTTQxODAgMjUwMHYtMTAwaDE4NmwzOC0xNjJjMjEtOTAgNDAtMTY4IDQzLTE3NCAyLTYtMzAtNTQtNzItMTA3LTQxLTU0LTc1LTEwMi03NS0xMDhzMjEtMzggNDctNzFsNDctNjEgMjYgMzEgMjcgMzIgMzItNDUgMzItNDUtMjAtMjljLTEyLTE2LTIxLTMyLTIxLTM2IDAtMTAgOTItMTI1IDk5LTEyNSAzIDEgMzcgNDIgNzYgOTMgMzggNTAgOTkgMTI4IDEzMyAxNzRsNjQgODItNzggMTAxLTc4IDEwMSAzMiAxMzdjMTggNzUgMzcgMTU0IDQzIDE3NWwxMCAzN2gxNzl2MjAwaC03NzB6IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMjQiLz48L3N2Zz4=);
@@ -233,6 +233,49 @@
     content: var(--sharechess-rb-url) !important;
   }
   [src$="wR.png"] {
+    content: var(--sharechess-rw-url) !important;
+  }
+}
+
+@-moz-document domain("chess24.com") {
+  img.piece {
+    filter: none;
+  }
+
+  img.piece.black[src$="b.png"] {
+    content: var(--sharechess-bb-url) !important;
+  }
+  img.piece.white[src$="b.png"] {
+    content: var(--sharechess-bw-url) !important;
+  }
+  img.piece.black[src$="k.png"] {
+    content: var(--sharechess-kb-url) !important;
+  }
+  img.piece.white[src$="k.png"] {
+    content: var(--sharechess-kw-url) !important;
+  }
+  img.piece.black[src$="n.png"] {
+    content: var(--sharechess-nb-url) !important;
+  }
+  img.piece.white[src$="n.png"] {
+    content: var(--sharechess-nw-url) !important;
+  }
+  img.piece.black[src$="p.png"] {
+    content: var(--sharechess-pb-url) !important;
+  }
+  img.piece.white[src$="p.png"] {
+    content: var(--sharechess-pw-url) !important;
+  }
+  img.piece.black[src$="q.png"] {
+    content: var(--sharechess-qb-url) !important;
+  }
+  img.piece.white[src$="q.png"] {
+    content: var(--sharechess-qw-url) !important;
+  }
+  img.piece.black[src$="r.png"] {
+    content: var(--sharechess-rb-url) !important;
+  }
+  img.piece.white[src$="r.png"] {
     content: var(--sharechess-rw-url) !important;
   }
 }

@@ -1,13 +1,13 @@
 /* ==UserStyle==
-    @name           Pirouetti Summer Shadows piece set
+    @name           Custom pieces
     @namespace      sharechess.github.io
-    @version        1.2.0
-    @description    Piece set for lichess.org, chess.com, openingtree.com, chessgames.com
+    @version        1.3.0
+    @description    Pirouetti Summer Shadows piece set for lichess.org, chess.com, openingtree.com, chessgames.com, chess24.com
     @author         pirouetti (color variant by caderek)
     @license        AGPLv3+
     ==/UserStyle== */
 
-@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com) {
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com), domain(chess24.com) {
   :root {
     --sharechess-bb-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIgdmlld0JveD0iMCAwIDE0NCAxNDQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik03NS40NDE5IDIwLjk1MkM3Ni43ODAzIDE5Ljk2MjYgNzcuNjIyMSAxOC41MjgyIDc3LjYyMjEgMTYuOTMyM0M3Ny42MjIxIDEzLjk0NzMgNzQuNjc3NyAxMS41Mjc2IDcxLjA0NTcgMTEuNTI3NkM2Ny40MTM2IDExLjUyNzYgNjQuNDY5MyAxMy45NDczIDY0LjQ2OTMgMTYuOTMyM0M2NC40NjkzIDE4LjUwMDMgNjUuMjgxOCAxOS45MTI0IDY2LjU3OTYgMjAuODk5NkM2MC4wNjQxIDI1LjI2MjcgNDkuNDg4OSAzNS4xNjM2IDUzLjg4NjYgNTEuNjI4M0M1NC40NTI2IDUzLjc0NzUgNTUuMDk1NiA1NS41NjE2IDU1Ljc5NjcgNTcuMTA4N0g0OC41OTUzVjYyLjg1MzVINTguNTk0NUw0Mi42NjQ2IDEyMi4zODFIMzAuMTUxMlYxMzAuMDkxSDM2LjUzODZWMTMyLjQ3MkgzMFYxNDAuMTgzSDExMy43OTJWMTMyLjQ3MkgxMDcuNzgzVjEzMC4wOTFIMTEzLjk0M1YxMjIuMzgxSDEwMS4wMzNMODMuNTMxIDYyLjg1MzVIOTMuOTQ5NlY1Ny4xMDg3SDg2LjA2MTFDODYuNzY1NCA1NS41NTM0IDg3LjQxMDggNTMuNzI3IDg3Ljk3OCA1MS41OTA1QzkyLjMxOSAzNS4yMzgzIDgxLjk0NzIgMjUuMzYwNCA3NS40NDE5IDIwLjk1MloiIGZpbGw9IiNGRjgyNjQiLz4KPHBhdGggZD0iTTc1Ljg5MjkgMTYuNTU0M0M3NS44OTI5IDE0LjI0ODggNzQuMjY3NyAxMi4yMDc5IDc0LjI2NzcgMTIuMjA3OUM4MS4xNDY1IDE2LjU1NDMgNzUuMzYzOCAyMS4wMTQyIDc1LjM2MzggMjEuMDE0MkM3NS4zNjM4IDIxLjAxNDIgNzUuODkyOSAxOC44NTk4IDc1Ljg5MjkgMTYuNTU0M1oiIGZpbGw9IiNEMTUyNTIiLz4KPHBhdGggZD0iTTc1LjM2MzggMjEuMDE0Mkg3NS4yODgyQzc1LjI4ODIgMjEuMDE0MiA4MC42MTczIDI2Ljc5NjggODIuNjIwNSAzMS4xODExQzg0LjY2MTQgMzUuNTI3NiA4NS4wMDE2IDM5LjIzMTUgODQuNjIzNiA0NS4wODk4Qzg0LjM2MTkgNDguNzc3NiA4Mi43MjIzIDUwLjg3NzggODEuNjM3NSA1Mi4yNjcyQzgwLjk5OTEgNTMuMDg1IDgwLjU1MjkgNTMuNjU2NSA4MC42OTI5IDU0LjE2MDZDODEuMDcwOSA1NS40ODM1IDgxLjE0NjUgNTcuMDcwOSA4MS4xNDY1IDU3LjA3MDlMODEuNzg5IDYyLjgxNTdIOTMuOTIxM1Y1Ny4wNzA5SDg2LjAyMkM4Ni4wMjIgNTcuMDcwOSA4Ny45ODc0IDUzLjgyMDUgODguNTkyMSA0OC42MDQ3Qzg4LjYxOTMgNDguMzcgODguNjQ2MyA0OC4xNDA1IDg4LjY3MjggNDcuOTE1NUM4OS4yMzQgNDMuMTQxNyA4OS41NTM4IDQwLjQyMTggODYuNzAyNCAzMy42QzgzLjcxNjUgMjYuNDU2NyA3NS4zNjM4IDIxLjAxNDIgNzUuMzYzOCAyMS4wMTQyWiIgZmlsbD0iI0QxNTI1MiIvPgo8cGF0aCBkPSJNOTUuNjU5OCAxMzAuMDkxTDM2LjU0OCAxMzAuMDkxVjEzMi40NzJIOTUuNjU5OFYxNDAuMTgzSDExMy44MzlWMTMyLjQ3MkwxMDcuNzkyIDEzMi40NzJWMTMwLjA5MUwxMTMuOTkxIDEzMC4wOTFWMTIyLjM4MUgxMDEuMTAyTDgzLjUyNzYgNjIuODUzNUg1OC4yNDI1TDgwLjY5MjkgNjguMzcxN0w5Mi40ODUgMTIyLjM4MUw5NS42NTk4IDEzMC4wOTFaIiBmaWxsPSIjRDE1MjUyIi8+Cjwvc3ZnPgo=);
     --sharechess-bw-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIgdmlld0JveD0iMCAwIDE0NCAxNDQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik03NS40NDE5IDIwLjk1MkM3Ni43ODAzIDE5Ljk2MjYgNzcuNjIyMSAxOC41MjgyIDc3LjYyMjEgMTYuOTMyM0M3Ny42MjIxIDEzLjk0NzMgNzQuNjc3NyAxMS41Mjc2IDcxLjA0NTcgMTEuNTI3NkM2Ny40MTM2IDExLjUyNzYgNjQuNDY5MyAxMy45NDczIDY0LjQ2OTMgMTYuOTMyM0M2NC40NjkzIDE4LjUwMDMgNjUuMjgxOCAxOS45MTI0IDY2LjU3OTYgMjAuODk5NkM2MC4wNjQxIDI1LjI2MjcgNDkuNDg4OSAzNS4xNjM2IDUzLjg4NjYgNTEuNjI4M0M1NC40NTI2IDUzLjc0NzUgNTUuMDk1NiA1NS41NjE2IDU1Ljc5NjcgNTcuMTA4N0g0OC41OTUzVjYyLjg1MzVINTguNTk0NUw0Mi42NjQ2IDEyMi4zODFIMzAuMTUxMlYxMzAuMDkxSDM2LjUzODZWMTMyLjQ3MkgzMFYxNDAuMTgzSDExMy43OTJWMTMyLjQ3MkgxMDcuNzgzVjEzMC4wOTFIMTEzLjk0M1YxMjIuMzgxSDEwMS4wMzNMODMuNTMxIDYyLjg1MzVIOTMuOTQ5NlY1Ny4xMDg3SDg2LjA2MTFDODYuNzY1NCA1NS41NTM0IDg3LjQxMDggNTMuNzI3IDg3Ljk3OCA1MS41OTA1QzkyLjMxOSAzNS4yMzgzIDgxLjk0NzIgMjUuMzYwNCA3NS40NDE5IDIwLjk1MloiIGZpbGw9IiNGRkY1QTUiLz4KPHBhdGggZD0iTTc1Ljg5MjkgMTYuNTU0M0M3NS44OTI5IDE0LjI0ODggNzQuMjY3NyAxMi4yMDc5IDc0LjI2NzcgMTIuMjA3OUM4MS4xNDY1IDE2LjU1NDMgNzUuMzYzOCAyMS4wMTQyIDc1LjM2MzggMjEuMDE0MkM3NS4zNjM4IDIxLjAxNDIgNzUuODkyOSAxOC44NTk4IDc1Ljg5MjkgMTYuNTU0M1oiIGZpbGw9IiNGRkFBNjQiLz4KPHBhdGggZD0iTTc1LjM2MzggMjEuMDE0Mkg3NS4yODgyQzc1LjI4ODIgMjEuMDE0MiA4MC42MTczIDI2Ljc5NjggODIuNjIwNSAzMS4xODExQzg0LjY2MTQgMzUuNTI3NiA4NS4wMDE2IDM5LjIzMTUgODQuNjIzNiA0NS4wODk4Qzg0LjM2MTkgNDguNzc3NiA4Mi43MjIzIDUwLjg3NzggODEuNjM3NSA1Mi4yNjcyQzgwLjk5OTEgNTMuMDg1IDgwLjU1MjkgNTMuNjU2NSA4MC42OTI5IDU0LjE2MDZDODEuMDcwOSA1NS40ODM1IDgxLjE0NjUgNTcuMDcwOSA4MS4xNDY1IDU3LjA3MDlMODEuNzg5IDYyLjgxNTdIOTMuOTIxM1Y1Ny4wNzA5SDg2LjAyMkM4Ni4wMjIgNTcuMDcwOSA4Ny45ODc0IDUzLjgyMDUgODguNTkyMSA0OC42MDQ3Qzg4LjYxOTMgNDguMzcgODguNjQ2MyA0OC4xNDA1IDg4LjY3MjggNDcuOTE1NUM4OS4yMzQgNDMuMTQxNyA4OS41NTM4IDQwLjQyMTggODYuNzAyNCAzMy42QzgzLjcxNjUgMjYuNDU2NyA3NS4zNjM4IDIxLjAxNDIgNzUuMzYzOCAyMS4wMTQyWiIgZmlsbD0iI0ZGQUE2NCIvPgo8cGF0aCBkPSJNOTUuNjU5OCAxMzAuMDkxTDM2LjU0OCAxMzAuMDkxVjEzMi40NzJIOTUuNjU5OFYxNDAuMTgzSDExMy44MzlWMTMyLjQ3MkwxMDcuNzkyIDEzMi40NzJWMTMwLjA5MUwxMTMuOTkxIDEzMC4wOTFWMTIyLjM4MUgxMDEuMTAyTDgzLjUyNzYgNjIuODUzNUg1OC4yNDI1TDgwLjY5MjkgNjguMzcxN0w5Mi40ODUgMTIyLjM4MUw5NS42NTk4IDEzMC4wOTFaIiBmaWxsPSIjRkZBQTY0Ii8+Cjwvc3ZnPgo=);
@@ -233,6 +233,49 @@
     content: var(--sharechess-rb-url) !important;
   }
   [src$="wR.png"] {
+    content: var(--sharechess-rw-url) !important;
+  }
+}
+
+@-moz-document domain("chess24.com") {
+  img.piece {
+    filter: drop-shadow(0.3vh 0.3vh 0.2vh #00000088);
+  }
+
+  img.piece.black[src$="b.png"] {
+    content: var(--sharechess-bb-url) !important;
+  }
+  img.piece.white[src$="b.png"] {
+    content: var(--sharechess-bw-url) !important;
+  }
+  img.piece.black[src$="k.png"] {
+    content: var(--sharechess-kb-url) !important;
+  }
+  img.piece.white[src$="k.png"] {
+    content: var(--sharechess-kw-url) !important;
+  }
+  img.piece.black[src$="n.png"] {
+    content: var(--sharechess-nb-url) !important;
+  }
+  img.piece.white[src$="n.png"] {
+    content: var(--sharechess-nw-url) !important;
+  }
+  img.piece.black[src$="p.png"] {
+    content: var(--sharechess-pb-url) !important;
+  }
+  img.piece.white[src$="p.png"] {
+    content: var(--sharechess-pw-url) !important;
+  }
+  img.piece.black[src$="q.png"] {
+    content: var(--sharechess-qb-url) !important;
+  }
+  img.piece.white[src$="q.png"] {
+    content: var(--sharechess-qw-url) !important;
+  }
+  img.piece.black[src$="r.png"] {
+    content: var(--sharechess-rb-url) !important;
+  }
+  img.piece.white[src$="r.png"] {
     content: var(--sharechess-rw-url) !important;
   }
 }
