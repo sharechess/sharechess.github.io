@@ -2,13 +2,15 @@
     @name           Custom chessboard
     @namespace      sharechess.github.io
     @version        1.3.0
-    @description    Havelock chessboard for lichess.org, chess.com, openingtree.com, chessgames.com, chess24.com
+    @description    Havelock chessboard for lichess.org, chess.com, openingtree.com, chessgames.com, chess24.com, chesstempo.com
     @author         sharechess.github.io
     ==/UserStyle== */
 
-@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com), domain(chess24.com) {
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com), domain(chess24.com), domain(chesstempo.com) {
   :root {
     --sharechess-board-url: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAASwAQMAAADR7yGMAAAABlBMVEVhe+Oazv+k+HJTAAADEklEQVR42u3cwQnDUAxEwQ8uwCW5dZeUAgxJAe9ijHMQzB6FJKaCXd/kWsnerbNbL75aWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYj1jN1sNPt45u/fUVFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhbWnVcd6WnGwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwprLavQ0Y2FhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWHNZXWkpxkLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLay6r0dOMhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhTWX1ZGeZiwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCysuaxGTzMWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYW1ljWD+8iRPOPKpVuAAAAAElFTkSuQmCC);
+    --sharechess-border-url: none;
+    --sharechess-border-color: #1e4098;
   }
 }
 
@@ -95,5 +97,42 @@
   .chess-board .svg > * {
     opacity: 0.6 !important;
     filter: brightness(0.5) sepia(1) hue-rotate(100deg) saturate(100);
+  }
+}
+
+@-moz-document domain("chesstempo.com") {
+  .ct-square-dark,
+  .ct-square-light,
+  .ct-board-row {
+    background: none !important;
+  }
+
+  .ct-board-squares {
+    background-image: var(--sharechess-board-url) !important;
+    background-size: cover !important;
+  }
+
+  .ct-board-inner-holder {
+    background-color: var(--sharechess-border-color) !important;
+    background-image: var(--sharechess-border-url) !important;
+    background-size: cover !important;
+  }
+
+  .ct-coord-row,
+  .ct-coord-column {
+    fill: #9aceff !important;
+  }
+
+  .ct-promotion-piece-holder {
+    background-color: var(--sharechess-border-color) !important;
+  }
+
+  .ct-promotion-piece-holder:hover {
+    background-color: var(--sharechess-border-color) !important;
+    background-image: linear-gradient(#ffffff55, #ffffff55) !important;
+  }
+
+  .ct-promotion-piece-holder :hover {
+    background-color: transparent !important;
   }
 }

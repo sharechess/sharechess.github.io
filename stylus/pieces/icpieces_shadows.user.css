@@ -1,13 +1,13 @@
 /* ==UserStyle==
     @name           Custom pieces
     @namespace      sharechess.github.io
-    @version        1.3.0
-    @description    Icpieces Shadows piece set for lichess.org, chess.com, openingtree.com, chessgames.com, chess24.com
+    @version        1.4.0
+    @description    Icpieces Shadows piece set for lichess.org, chess.com, openingtree.com, chessgames.com, chess24.com, chesstempo.com
     @author         sadsnake1 
     @license        CC BY-NC-SA 4.0
     ==/UserStyle== */
 
-@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com), domain(chess24.com) {
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com), domain(chess24.com), domain(chesstempo.com) {
   :root {
     --sharechess-bb-url: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJ5ZXMiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNjgiIGhlaWdodD0iMzY4Ij4KPHBhdGggc3R5bGU9ImZpbGw6I2ZmZmZmZjsgc3Ryb2tlOm5vbmU7IiBkPSJNMTY4IDEwMUMxNjAuNzAzIDExMC40OTMgMTU0LjY0MyAxMjEuMDM1IDE0OCAxMzFDMTMxLjc5NCAxNTUuMzA5IDExNC4xMTggMTgxLjM1MSAxMTkuMjg1IDIxMkMxMjEuNzQxIDIyNi41NjMgMTI5LjkxNyAyMzkuOTI4IDEzOC4wMDEgMjUyQzE0MC41MSAyNTUuNzQ2IDE0OC43NzEgMjYzLjkxNiAxNDcuNDczIDI2OC43ODdDMTQ2LjI3NyAyNzMuMjc0IDEzNi43MjEgMjc1LjYgMTMzIDI3Ny4zMDlDMTE4Ljk5NyAyODMuNzM4IDEwMy40NyAyODkuNzkzIDkxLjA0MDEgMjk5LjA0M0M3OC42MTM3IDMwOC4yOSA4MiAzMjcuNDg4IDgyIDM0MUwyODYgMzQxQzI4NiAzMjcuNDg4IDI4OS4zODYgMzA4LjI5IDI3Ni45NiAyOTkuMDQzQzI2NC41MyAyODkuNzkzIDI0OS4wMDMgMjgzLjczOCAyMzUgMjc3LjMwOUMyMzEuMjc5IDI3NS42IDIyMS43MjMgMjczLjI3NCAyMjAuNTI3IDI2OC43ODdDMjE5LjMyOCAyNjQuMjg5IDIyNi4zNDYgMjU3LjM5NCAyMjguNjU2IDI1NEMyMzYuNjQzIDI0Mi4yNjMgMjQ0LjIxMSAyMjkuODU0IDI0Ny44NDQgMjE2QzI1Ni4zMzQgMTgzLjYyNCAyMzUuNjc4IDE1NC41MTcgMjE4LjY2NyAxMjlDMjEyLjg2IDEyMC4yOSAyMDcuNzIzIDEwOS4wNzggMjAwIDEwMkMyMDMuNDg5IDk3Ljg5NTMgMjA2LjcxNiA5My40MzY1IDIwNy42NzEgODhDMjA4LjM5OSA4My44NTg5IDIwOC4yMjYgNzkuMDQxNCAyMDcuMDYxIDc1QzIwMy4wNzUgNjEuMTc2NyAxODUuNjQgNTQuNjc3NyAxNzMgNjFDMTYxLjg1MyA2Ni41NzU1IDE1Ni44OTEgODAuNDM5MSAxNjEuNDc5IDkyQzE2Mi45MjggOTUuNjUgMTY1LjAxNCA5OC41MjU1IDE2OCAxMDF6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiMwMDAwMDA7IHN0cm9rZTpub25lOyIgZD0iTTE4MCA2OS42NTI4QzE2Mi45MzEgNzQuOTg0NiAxNzEuMDE3IDEwMS4zMjcgMTg4IDk2LjAwMzFDMjA1LjA5OCA5MC42NDMzIDE5Ni44MTggNjQuMzk5IDE4MCA2OS42NTI4TTExMyAyOThDMTE3LjIxNSAyOTkuNzY5IDEyMi40NjUgMjk5IDEyNyAyOTlMMTU2IDI5OUwyNTUgMjk5QzI0NS43MyAyOTEuNTExIDIzMS42OTkgMjg3LjYxIDIyMSAyODIuMjQ3QzIxNi41NTUgMjgwLjAxOSAyMDkuMzQ1IDI3Ny4zNTMgMjA3LjkyNyAyNzEuOTg1QzIwNi44MiAyNjcuNzkgMjEwLjM5MSAyNjIuNDA3IDIxMi40NjQgMjU5QzIxOC42NTIgMjQ4LjgyOCAyMjYuMjgxIDIzOS42NSAyMzEuNzQxIDIyOUMyNDQuNTE1IDIwNC4wODEgMjM4LjA3NyAxNzkuOTk2IDIyNC4zOTYgMTU3QzIyMC4zNyAxNTAuMjM0IDIxNi4xIDE0Mi4wNDEgMjEwIDEzN0MxOTguNTI5IDE1OC41NDggMTgyLjMzOSAxNzcuODgyIDE3MiAyMDBDMTY5LjYyMSAxOTguMzY1IDE2NS41MSAxOTYuMzY4IDE2NS42ODkgMTkyLjk2QzE2NS45MzQgMTg4LjI4MyAxNzEuNjA4IDE4MS45MDIgMTc0LjA1IDE3OEMxODEuNTI1IDE2Ni4wNTkgMTg4Ljg5MiAxNTQuMDQyIDE5Ni4yMDMgMTQyQzE5OS4wMTEgMTM3LjM3NCAyMDUuNDg3IDEzMC43MiAyMDMuMTAzIDEyNUMxOTkuMzIzIDExNS45MzQgMTg5Ljg1MyAxMDAuODE5IDE3OC4wNCAxMDcuMDI4QzE3MC40NTIgMTExLjAxNiAxNjUuMjk5IDEyNC4wNTEgMTYwLjY2NyAxMzFDMTQ1LjM5NCAxNTMuOTA5IDEyMy4zOTggMTgxLjQyOCAxMjkuNjY5IDIxMUMxMzIuODk3IDIyNi4yMjQgMTQxLjk1NSAyMzkuNDUxIDE1MC43MiAyNTJDMTU0LjA5MiAyNTYuODI5IDE2MS43ODIgMjY1LjUxMSAxNjAuMDczIDI3MS45ODVDMTU4LjczNyAyNzcuMDQyIDE1Mi4yMDQgMjc5LjYzNSAxNDggMjgxLjc1MkMxMzYuNTYzIDI4Ny41MTIgMTI0Ljk0MiAyOTMuMzY3IDExMyAyOThNOTIgMzMxTDI3NiAzMzFDMjc2IDMyNS40ODcgMjc3LjgyMiAzMTIuNTczIDI3MS42MDYgMzA5LjYwM0MyNjguMjE1IDMwNy45ODQgMjYyLjY3MiAzMDkgMjU5IDMwOUwyMjkgMzA5TDEzNSAzMDlMMTA4IDMwOUMxMDQuNTg2IDMwOSA5OS41NTM2IDMwOC4wOTQgOTYuMzk0MyAzMDkuNjAzQzkwLjE3NzYgMzEyLjU3MyA5MiAzMjUuNDg3IDkyIDMzMXoiLz4KPC9zdmc+Cg==);
     --sharechess-bw-url: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJ5ZXMiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNjgiIGhlaWdodD0iMzY4Ij4KPHBhdGggc3R5bGU9ImZpbGw6IzAwMDAwMDsgc3Ryb2tlOm5vbmU7IiBkPSJNMTc3IDEwMEMxNjcuOTc2IDEwOS4xIDE2MS43NDcgMTIwLjM4IDE1NC42NjcgMTMxQzEzOC4yOTcgMTU1LjU1NSAxMTcuNDYgMTgzLjY2IDEyNS40NzggMjE1QzEzMS4wMTUgMjM2LjYzOSAxNDguOTgzIDI1MS40MjcgMTU2IDI3MkMxNDAuMjkxIDI3OC43NjkgMTI0LjE1NyAyODYuNzg0IDEwOSAyOTQuNzgxQzEwMi42OTQgMjk4LjEwOCA5NC4xNzMxIDMwMS43MjQgOTAuMzY2NSAzMDguMDRDODUuNDQ5NCAzMTYuMTk5IDg3IDMyNi45MDEgODcgMzM2TDI4MSAzMzZDMjgxIDMyNi45MDEgMjgyLjU1MSAzMTYuMTk5IDI3Ny42MzMgMzA4LjA0QzI3My44MjcgMzAxLjcyNCAyNjUuMzA2IDI5OC4xMDggMjU5IDI5NC43ODFDMjQzLjcxOSAyODYuNzE5IDIyNy42NDggMjc5LjMwNiAyMTIgMjcyQzIxOS4wMTcgMjUxLjQyNyAyMzYuOTg1IDIzNi42MzkgMjQyLjUyMiAyMTVDMjUwLjgzIDE4Mi41MjggMjI4LjA5MSAxNTIuMTMxIDIxMC43MTcgMTI3QzIwNC4yOTkgMTE3LjcxNyAxOTguOTk2IDEwOC4wNjQgMTkxIDEwMEMyMDkuOTQzIDkyLjY1NjQgMjA0LjEzMiA2NC4wMjkzIDE4NCA2NC4wMjkzQzE2My44NjggNjQuMDI5MyAxNTguMDU3IDkyLjY1NjQgMTc3IDEwMHoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I2ZmZmZmZjsgc3Ryb2tlOm5vbmU7IiBkPSJNMTgyLjAwNSA3NC42MTI2QzE3MC42NjQgNzcuMzM4IDE3NS42NzEgOTMuNzc4OSAxODYuOTU3IDkwLjU2NTZDMTk3LjA4MiA4Ny42ODI4IDE5MS45OSA3Mi4yMTMgMTgyLjAwNSA3NC42MTI2TTEyNSAyOThDMTI4Ljk1OSAyOTkuNjYxIDEzMy43NCAyOTkgMTM4IDI5OUwxNjEgMjk5TDI0MyAyOTlDMjM0LjIyNCAyOTIuMzU4IDIyMi40MDEgMjg5Ljc4MyAyMTMgMjgzLjkzNEMyMDkuMTIgMjgxLjUyMSAyMDQuMzc1IDI3OC41MjIgMjAyLjc1NyAyNzMuOTk5QzIwMC40MDQgMjY3LjQxOSAyMDYuMjU3IDI1OS4xNDMgMjA5LjY2NyAyNTRDMjE3LjgzOCAyNDEuNjc2IDIyNy41ODQgMjI5LjMzOSAyMzEuOTYxIDIxNUMyNDAuNDExIDE4Ny4zMTQgMjIxLjYwMiAxNjQuNjM1IDIwOSAxNDJMMjA3IDE0MkMyMDAuNDIzIDE1NS45MDYgMTkwLjc4NSAxNjguODQzIDE4Mi43OTcgMTgyQzE4MC4xNzMgMTg2LjMyMiAxNzYuNTg0IDE5NS41MTcgMTcyLjA3NiAxOTguMDAzQzE2OS40MjMgMTk5LjQ2NiAxNjUuMzU3IDE5Ni4xMDEgMTYzIDE5NUMxNzIuNzExIDE4Mi4yNzMgMTgwLjE1MSAxNjcuNTQzIDE4OC42ODEgMTU0QzE5Mi4zMDEgMTQ4LjI1MyAxOTguOTM1IDE0MC43MTkgMjAwLjI0MyAxMzRDMjAxLjM3OCAxMjguMTcxIDE5NC40ODEgMTIwLjQ2MSAxOTEuMzI5IDExNi4wMTlDMTg5Ljg4OCAxMTMuOTg4IDE4OC40NDkgMTExLjk2NyAxODUuOTA3IDExMS4zMjNDMTc3LjM2MyAxMDkuMTU1IDE3MS45MzQgMTIzLjM3IDE2OC4zMDggMTI5QzE1NS40NiAxNDguOTQ3IDEzOC4yNTIgMTY4Ljc3NSAxMzQuNDM5IDE5M0MxMzEuMzM3IDIxMi43MDUgMTQxLjg5MyAyMjkuMzM5IDE1Mi4zMzMgMjQ1QzE1Ny4xOCAyNTIuMjY5IDE2Ni42MzkgMjYyLjUzMyAxNjUuNjc4IDI3MkMxNjUuMTg2IDI3Ni44NDUgMTYwLjcyIDI4MC4xMjQgMTU3IDI4Mi42NEMxNDcuNTc2IDI4OS4wMTYgMTM1Ljc1NiAyOTQuMzM4IDEyNSAyOThNOTcgMzI2TDI3MSAzMjZDMjcwLjk4OCAzMjEuNjE3IDI3MS4xMTYgMzE2Ljg1OSAyNjguMjk3IDMxMy4xODlDMjYyLjMyNyAzMDUuNDE3IDI0My43NTUgMzA5IDIzNSAzMDlMMTMwIDMwOUMxMjEuMDU4IDMwOSAxMDMuNDI3IDMwNS4zODMgOTguNTcyNSAzMTUuMDRDOTYuODY2NyAzMTguNDM0IDk3LjAxMDIgMzIyLjMxIDk3IDMyNnoiLz4KPC9zdmc+Cg==);
@@ -277,5 +277,60 @@
   }
   img.piece.white[src$="r.png"] {
     content: var(--sharechess-rw-url) !important;
+  }
+}
+
+@-moz-document domain("chesstempo.com") {
+  .ct-pieceClass {
+    filter: drop-shadow(0.7vh 0.7vh 0.5vh #00000088);
+  }
+
+  .ct-piece-blackbishop {
+    background-image: var(--sharechess-bb-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-whitebishop {
+    background-image: var(--sharechess-bw-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-blackking {
+    background-image: var(--sharechess-kb-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-whiteking {
+    background-image: var(--sharechess-kw-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-blackknight {
+    background-image: var(--sharechess-nb-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-whiteknight {
+    background-image: var(--sharechess-nw-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-blackpawn {
+    background-image: var(--sharechess-pb-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-whitepawn {
+    background-image: var(--sharechess-pw-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-blackqueen {
+    background-image: var(--sharechess-qb-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-whitequeen {
+    background-image: var(--sharechess-qw-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-blackrook {
+    background-image: var(--sharechess-rb-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-whiterook {
+    background-image: var(--sharechess-rw-url) !important;
+    background-size: cover !important;
   }
 }

@@ -1,13 +1,13 @@
 /* ==UserStyle==
     @name           Custom pieces
     @namespace      sharechess.github.io
-    @version        1.3.0
-    @description    Kosal Red Shadows piece set for lichess.org, chess.com, openingtree.com, chessgames.com, chess24.com
+    @version        1.4.0
+    @description    Kosal Red Shadows piece set for lichess.org, chess.com, openingtree.com, chessgames.com, chess24.com, chesstempo.com
     @author         Philatype (color variant by caderek)
     @license        CC BY 4.0
     ==/UserStyle== */
 
-@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com), domain(chess24.com) {
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com), domain(chess24.com), domain(chesstempo.com) {
   :root {
     --sharechess-bb-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODEiIGhlaWdodD0iODEiIHZpZXdCb3g9IjAgMCA4MSA4MSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE4LjkgNzJINjIuMUw1MC4zIDYyLjVIMzAuN0wxOC45IDcyWk00MSAxOC45QzQyLjUgMTguOSA0My45IDE4LjQgNDUgMTcuNkw0Ny44IDEyLjRWMTIuMUM0Ny44IDguNCA0NC44IDUuMyA0MSA1LjNDMzcuMyA1LjMgMzQuMiA4LjMgMzQuMiAxMi4xVjEyLjRMMzcgMTcuNkMzOC4yIDE4LjQgMzkuNiAxOC45IDQxIDE4LjlaIiBmaWxsPSIjNEYwOTFEIi8+CjxwYXRoIGQ9Ik00OC40IDIwLjRMMzguNyAzOC42TDM3IDMyLjdMNDUuMSAxNy41QzQ0LjEgMTYuNyA0My4xIDE2IDQyLjEgMTUuM0gzOUMyOSAyMS45IDE5LjkgMzIuOCAxOS45IDQ3LjVMMzAuOCA2Mi43SDUwLjJMNjEuMSA0Ny41QzYxLjEgMzYuMSA1NS42IDI3IDQ4LjQgMjAuNFoiIGZpbGw9IiM0RjA5MUQiLz4KPHBhdGggZD0iTTQ4LjYgMjcuOUw0MS40IDQwLjlDNDEuNCA0MC45IDQ2LjQgNDIuMiA0OC42IDM5QzUwLjggMzUuOSA1MC4yIDI4LjkgNDguNiAyNy45Wk0zMS4yIDU1LjFDMjkuNiA0MS4yIDMyLjYgMjcgMzkuMSAyMC4zTDM4LjYgMTkuNkMzMS41IDI1LjkgMjQuNiAzNS4yIDI0LjYgNDYuMkwzMS4yIDU1LjFaTTM3LjkgNjlWNjMuM0gzNS40TDI4LjggNjlIMzcuOVpNNDIuNCA3Ljg5OTk5QzQxLjYgNy4zOTk5OSA0MC42IDcuMjk5OTkgMzkuNyA3LjU5OTk5QzM3LjggOC4wOTk5OSAzNi43IDEwLjEgMzcuMiAxMkMzNy4yIDEyLjEgMzcuMiAxMi4xIDM3LjMgMTIuMkM0MC4zIDEyLjQgNDIuOCA5LjI5OTk5IDQyLjQgNy44OTk5OVoiIGZpbGw9IiNERDRBNDgiLz4KPC9zdmc+Cg==);
     --sharechess-bw-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODEiIGhlaWdodD0iODEiIHZpZXdCb3g9IjAgMCA4MSA4MSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYxLjQgNzFMNDkuNSA2MS45TDYwLjEgNDcuM0M2MC4xIDM2LjMgNTUuMiAyNy40IDQ4LjIgMjFMNDYuNSAyMC4yTDM4LjYgMzQuNUwzNy4xIDMyLjlMNDQuOSAxOC4yTDQ3LjYgMTMuMVYxMi45QzQ3LjYgOS4zIDQ0LjcgNi4zIDQxIDYuM0MzNy40IDYuMyAzNC40IDkuMiAzNC40IDEyLjlWMTMuMUwzNi43IDE3LjVDMjggMjQuMSAyMC45IDM0LjEgMjAuOSA0Ny4zTDMxLjUgNjEuOUwxOS42IDcxSDYxLjRaIiBmaWxsPSIjRjVFRURDIi8+CjxwYXRoIGQ9Ik00NS42IDcwLjdINjBMNDkuNiA2MS4ySDQyLjhMNDUuNiA3MC43Wk01MC44IDI1LjFDNTQuNyA0Mi4xIDM2IDU1LjggMzYgNTUuOEw0My4zIDYwLjVINTAuN0w2MC45IDQ3LjNMNTkuNCAzOC43TDU1LjggMzAuNEw1My4yIDI2TDUwLjggMjUuMVpNNDQuNSA4LjYwMDAxQzQ1LjMgMTEgNDEuMSAxMyA0MS4xIDEzVjE4LjFMNDQuNCAxOC4yTDQ3LjQgMTMuOUw0Ny4xIDEwLjVMNDUgOC42MDAwMUg0NC41WiIgZmlsbD0iIzk3QkZCNCIvPgo8cGF0aCBkPSJNNjUgNzIuMkw1MC45IDYxLjZMNjEuMSA0Ny42VjQ3LjJDNjEuMSAzMy4xIDUzLjUgMjQuMSA0OC45IDE5LjlMNDYuNiAxNy42TDQ4LjcgMTMuN0w0OC44IDEzLjRWMTIuOUM0OC44IDguNiA0NS4zIDUgNDAuOSA1QzM2LjYgNSAzMy4xIDguNSAzMy4xIDEyLjlWMTMuNEwzNSAxNy4xQzI5LjEgMjEuNyAxOS41IDMxLjcgMTkuNSA0Ny4yVjQ3LjZMMjkuNyA2MS42TDE2IDcyLjJINjVaTTIyLjUgNDYuOUMyMi4yIDMyLjMgMzEuOCAyMi45IDM3LjUgMTguN0wzOC40IDE4LjFMMzUuNyAxM0MzNS43IDEwLjEgMzguMSA3LjcgNDEgNy43QzQzLjkgNy43IDQ2LjMgMTAuMSA0Ni40IDEzTDM1LjggMzQuNlYzNC43TDM4IDQwLjVMNDcuMyAyMS43TDQ4LjQgMjIuN0M1My4yIDI3LjQgNTguOCAzNS40IDU4LjUgNDYuOEw0OS4zIDU5LjhIMzEuOEwyMi41IDQ2LjlaTTMyLjkgNjIuNUg0OEw1Ny44IDY5LjhIMjMuMkwzMi45IDYyLjVaIiBmaWxsPSIjMjIyMjIyIi8+CjxwYXRoIGQ9Ik0zNi4yIDE4SDQxLjFMMzguNCAyMC4xSDM0LjYiIGZpbGw9IiMyMjIyMjIiLz4KPC9zdmc+Cg==);
@@ -277,5 +277,60 @@
   }
   img.piece.white[src$="r.png"] {
     content: var(--sharechess-rw-url) !important;
+  }
+}
+
+@-moz-document domain("chesstempo.com") {
+  .ct-pieceClass {
+    filter: drop-shadow(0.7vh 0.7vh 0.5vh #00000088);
+  }
+
+  .ct-piece-blackbishop {
+    background-image: var(--sharechess-bb-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-whitebishop {
+    background-image: var(--sharechess-bw-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-blackking {
+    background-image: var(--sharechess-kb-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-whiteking {
+    background-image: var(--sharechess-kw-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-blackknight {
+    background-image: var(--sharechess-nb-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-whiteknight {
+    background-image: var(--sharechess-nw-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-blackpawn {
+    background-image: var(--sharechess-pb-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-whitepawn {
+    background-image: var(--sharechess-pw-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-blackqueen {
+    background-image: var(--sharechess-qb-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-whitequeen {
+    background-image: var(--sharechess-qw-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-blackrook {
+    background-image: var(--sharechess-rb-url) !important;
+    background-size: cover !important;
+  }
+  .ct-piece-whiterook {
+    background-image: var(--sharechess-rw-url) !important;
+    background-size: cover !important;
   }
 }
