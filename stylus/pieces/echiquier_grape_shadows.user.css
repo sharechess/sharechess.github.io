@@ -1,13 +1,13 @@
 /* ==UserStyle==
     @name           Custom pieces
     @namespace      sharechess.github.io
-    @version        1.4.0
-    @description    Echiquier Grape Shadows piece set for lichess.org, chess.com, openingtree.com, chessgames.com, chess24.com, chesstempo.com
+    @version        1.5.0
+    @description    Echiquier Grape Shadows piece set for lichess.org, chess.com, openingtree.com, chessgames.com, chess24.com, chesstempo.com, listudy.org, chesspecker.com, chessbase.com, wikipedia.org, aimchess.com, chessable.com
     @author         Vincent Tellier (color variant by caderek)
     @license        CC BY-SA 4.0
     ==/UserStyle== */
 
-@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com), domain(chess24.com), domain(chesstempo.com) {
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com), domain(chess24.com), domain(chesstempo.com), domain(listudy.org), domain(chesspecker.com), domain(chessbase.com), domain(wikipedia.org), domain(aimchess.com), domain(chessable.com) {
   :root {
     --sharechess-bb-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNjIuODQwMiAyMjYuOTE1QzYyLjkyMTkgMjI5Ljg2OCA2NS45Njc1IDIyOSA2NS45Njc1IDIyOUgxOTUuMjNDMTc3LjY0NiAyMTYuNDgxIDE2Ni45NDEgMjE1LjE3MiAxNTYuNjYgMjEzLjM2M0MxODEuMzc4IDE5MS4wOTUgMTg0LjI3OSAxNTMuOTk0IDE4My43NjMgMTM3LjA4NUMxODMuMjQ4IDEyMC4xNzYgMTcxLjYzOCA4Ny45NzIzIDE0MS4yNDkgNjAuOTE2MUMxNDMuNjQ0IDU1Ljc3NyAxNDQuMjg5IDQ5Ljc5NzQgMTQyLjc0IDQ1LjA4MzlDMTQxLjE5IDQwLjM3MDMgMTM0LjgwMSAzMy4zODA2IDEyNS4zODcgMzMuMDIwNkMxMDkuNjI1IDMyLjQxNzcgMTA2LjA3IDQ1LjIxOTMgMTA1LjU4IDUwLjc0MjFDMTA1LjA5IDU2LjI2NDkgMTA4LjA5NyA2NC45OTM0IDExNi4wMDUgNzAuNTQ4NUMxMjMuOTEyIDc2LjEwMzUgMTQ2LjQ4NSA5Mi4wMDY3IDE0Mi4wNjYgMTM1LjE4QzEzNy42NDcgMTc4LjM1MyAxMTAuMjE0IDE5MS4xMyA5Mi4wMjg1IDIwMi45MzlDNzMuODQyOCAyMTQuNzQ3IDYyLjY5NzMgMjIxLjc1MyA2Mi44NDAyIDIyNi45MTVaTTEwNC41MzggNzAuNTQ4NUMxMDcuMDM0IDY5Ljc2NzIgOTMuNzM3MyA4MC43NjU1IDg5Ljk0MzcgOTUuNTY3MUM4Ni4xNSAxMTAuMzY5IDk3Ljc0NDggMTI3LjQ4NSAxMDQuNTM4IDE0MS40MzVDMTExLjMzMSAxNTUuMzg0IDExMS4zMyAxNzMuNjQgMTAxLjQxMSAxODEuMDQ3QzkxLjQ5MTMgMTg4LjQ1NSA2OS40NDMxIDE4Ny4zOTkgNjAuNzU1MyAxNDkuNzc0QzU4LjQyNTQgMTM5LjYxOSA2Mi4xNjc1IDEyOS41MjYgNjIuODQwMiAxMjUuNzk4QzcxLjM5NjggMTM1LjA0IDc3LjgyMTIgMTQ4LjEyIDgxLjYwNDEgMTU4LjExNEM4NS44OTUzIDE1Mi4zMzYgODIuMjk5NCAxNDIuMzQgNzkuNTE5MiAxMzMuMDk1Qzc2LjczOSAxMjMuODUgNzMuMTUwNyAxMTUuODAzIDY5LjA5NDkgMTEwLjE2MUM3Ni43NDIzIDg1LjQ0MTQgMTAyLjQxNiA3MS4yMTI2IDEwNC41MzggNzAuNTQ4NVoiIGZpbGw9IiMyRDEzMkMiIHN0cm9rZT0iIzJEMTMyQyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
     --sharechess-bw-url: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDI1NiAyNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNjIuODQwMiAyMjYuOTE1QzYyLjkyMTkgMjI5Ljg3IDY1Ljk2NzUgMjI5IDY1Ljk2NzUgMjI5SDE5NS4yM0MxNzcuNjQ2IDIxNi40OCAxNjYuOTQxIDIxNS4xNjggMTU2LjY2IDIxMy4zNjNDMTgxLjM3OCAxOTEuMDk2IDE4NC4yNzkgMTUzLjk5OCAxODMuNzYzIDEzNy4wODJDMTgzLjI0OCAxMjAuMTY3IDE3MS42MzggODcuOTY5MSAxNDEuMjQ5IDYwLjkxOTNDMTQzLjY0NCA1NS43ODI0IDE0NC4yODkgNDkuNzk2NCAxNDIuNzQgNDUuMDg5M0MxNDEuMTkgNDAuMzgyMiAxMzQuODAxIDMzLjM4NTkgMTI1LjM4NyAzMy4wMjA1QzEwOS42MjUgMzIuNDE4NyAxMDYuMDcgNDUuMjE4MyAxMDUuNTggNTAuNzQyMUMxMDUuMDkgNTYuMjY2IDEwOC4wOTcgNjQuOTkyNCAxMTYuMDA1IDcwLjU0ODVDMTIzLjkxMiA3Ni4xMDQ2IDE0Ni40ODUgOTIuMDA5OSAxNDIuMDY2IDEzNS4xOEMxMzcuNjQ3IDE3OC4zNSAxMTAuMjE0IDE5MS4xMjggOTIuMDI4NSAyMDIuOTM5QzczLjg0MjggMjE0Ljc0OSA2Mi42OTczIDIyMS43NTYgNjIuODQwMiAyMjYuOTE1Wk0xMDQuNTM4IDcwLjU0ODVDMTA3LjAzNCA2OS43NjM5IDkzLjczNzMgODAuNzY4NyA4OS45NDM3IDk1LjU2NzFDODYuMTUgMTEwLjM2NSA5Ny43NDQ4IDEyNy40ODUgMTA0LjUzOCAxNDEuNDM0QzExMS4zMzEgMTU1LjM4NCAxMTEuMzMgMTczLjY0MyAxMDEuNDExIDE4MS4wNDdDOTEuNDkxMyAxODguNDUyIDY5LjQ0MzEgMTg3LjM5OSA2MC43NTUzIDE0OS43NzRDNTguNDI1NCAxMzkuNjE4IDYyLjE2NzUgMTI5LjUyNyA2Mi44NDAyIDEyNS43OThDNzEuMzk2OCAxMzUuMDQgNzcuODIxMiAxNDguMTE5IDgxLjYwNDEgMTU4LjExNEM4NS44OTUzIDE1Mi4zNDMgODIuMjk5NCAxNDIuMzM3IDc5LjUxOTIgMTMzLjA5NUM3Ni43MzkgMTIzLjg1MyA3My4xNTA3IDExNS44MDMgNjkuMDk0OSAxMTAuMTYxQzc2Ljc0MjMgODUuNDQzNSAxMDIuNDE2IDcxLjIxNDggMTA0LjUzOCA3MC41NDg1WiIgZmlsbD0iI0M2RTM3NyIgc3Ryb2tlPSIjMzY2MjJCIiBzdHJva2Utd2lkdGg9IjUuMzczNDEiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==);
@@ -332,5 +332,394 @@
   .ct-piece-whiterook {
     background-image: var(--sharechess-rw-url) !important;
     background-size: cover !important;
+  }
+}
+
+@-moz-document domain("listudy.org") {
+  piece {
+    filter: drop-shadow(0.5vh 0.5vh 0.4vh #00000088);
+  }
+
+  .bishop.black {
+    background-image: var(--sharechess-bb-url) !important;
+  }
+  .bishop.white {
+    background-image: var(--sharechess-bw-url) !important;
+  }
+  .king.black {
+    background-image: var(--sharechess-kb-url) !important;
+  }
+  .king.white {
+    background-image: var(--sharechess-kw-url) !important;
+  }
+  .knight.black {
+    background-image: var(--sharechess-nb-url) !important;
+  }
+  .knight.white {
+    background-image: var(--sharechess-nw-url) !important;
+  }
+  .pawn.black {
+    background-image: var(--sharechess-pb-url) !important;
+  }
+  .pawn.white {
+    background-image: var(--sharechess-pw-url) !important;
+  }
+  .queen.black {
+    background-image: var(--sharechess-qb-url) !important;
+  }
+  .queen.white {
+    background-image: var(--sharechess-qw-url) !important;
+  }
+  .rook.black {
+    background-image: var(--sharechess-rb-url) !important;
+  }
+  .rook.white {
+    background-image: var(--sharechess-rw-url) !important;
+  }
+}
+
+@-moz-document domain("chesspecker.com") {
+  piece {
+    filter: drop-shadow(0.5vh 0.5vh 0.4vh #00000088);
+  }
+
+  .bishop.black {
+    background-image: var(--sharechess-bb-url) !important;
+  }
+  .bishop.white {
+    background-image: var(--sharechess-bw-url) !important;
+  }
+  .king.black {
+    background-image: var(--sharechess-kb-url) !important;
+  }
+  .king.white {
+    background-image: var(--sharechess-kw-url) !important;
+  }
+  .knight.black {
+    background-image: var(--sharechess-nb-url) !important;
+  }
+  .knight.white {
+    background-image: var(--sharechess-nw-url) !important;
+  }
+  .pawn.black {
+    background-image: var(--sharechess-pb-url) !important;
+  }
+  .pawn.white {
+    background-image: var(--sharechess-pw-url) !important;
+  }
+  .queen.black {
+    background-image: var(--sharechess-qb-url) !important;
+  }
+  .queen.white {
+    background-image: var(--sharechess-qw-url) !important;
+  }
+  .rook.black {
+    background-image: var(--sharechess-rb-url) !important;
+  }
+  .rook.white {
+    background-image: var(--sharechess-rw-url) !important;
+  }
+}
+
+@-moz-document domain("chessbase.com") {
+  [class^="CBChessPiece_piece"] {
+    filter: drop-shadow(0.5vh 0.5vh 0.4vh #00000088);
+  }
+
+  div[class*="blackBishop"] {
+    background-image: var(--sharechess-bb-url) !important;
+  }
+
+  img[alt="Black Bishop"] {
+    content: var(--sharechess-bb-url) !important;
+  }
+
+  div[class*="whiteBishop"] {
+    background-image: var(--sharechess-bw-url) !important;
+  }
+
+  img[alt="White Bishop"] {
+    content: var(--sharechess-bw-url) !important;
+  }
+
+  div[class*="blackKing"] {
+    background-image: var(--sharechess-kb-url) !important;
+  }
+
+  img[alt="Black King"] {
+    content: var(--sharechess-kb-url) !important;
+  }
+
+  div[class*="whiteKing"] {
+    background-image: var(--sharechess-kw-url) !important;
+  }
+
+  img[alt="White King"] {
+    content: var(--sharechess-kw-url) !important;
+  }
+
+  div[class*="blackKnight"] {
+    background-image: var(--sharechess-nb-url) !important;
+  }
+
+  img[alt="Black Knight"] {
+    content: var(--sharechess-nb-url) !important;
+  }
+
+  div[class*="whiteKnight"] {
+    background-image: var(--sharechess-nw-url) !important;
+  }
+
+  img[alt="White Knight"] {
+    content: var(--sharechess-nw-url) !important;
+  }
+
+  div[class*="blackPawn"] {
+    background-image: var(--sharechess-pb-url) !important;
+  }
+
+  img[alt="Black Pawn"] {
+    content: var(--sharechess-pb-url) !important;
+  }
+
+  div[class*="whitePawn"] {
+    background-image: var(--sharechess-pw-url) !important;
+  }
+
+  img[alt="White Pawn"] {
+    content: var(--sharechess-pw-url) !important;
+  }
+
+  div[class*="blackQueen"] {
+    background-image: var(--sharechess-qb-url) !important;
+  }
+
+  img[alt="Black Queen"] {
+    content: var(--sharechess-qb-url) !important;
+  }
+
+  div[class*="whiteQueen"] {
+    background-image: var(--sharechess-qw-url) !important;
+  }
+
+  img[alt="White Queen"] {
+    content: var(--sharechess-qw-url) !important;
+  }
+
+  div[class*="blackRook"] {
+    background-image: var(--sharechess-rb-url) !important;
+  }
+
+  img[alt="Black Rook"] {
+    content: var(--sharechess-rb-url) !important;
+  }
+
+  div[class*="whiteRook"] {
+    background-image: var(--sharechess-rw-url) !important;
+  }
+
+  img[alt="White Rook"] {
+    content: var(--sharechess-rw-url) !important;
+  }
+}
+
+@-moz-document domain("wikipedia.org") {
+  .chess-board > div > img {
+    filter: drop-shadow(0.2vh 0.2vh 0.2vh #00000088);
+  }
+
+  .chess-board img[alt$="black bishop"] {
+    content: var(--sharechess-bb-url) !important;
+  }
+  .chess-board img[alt$="white bishop"] {
+    content: var(--sharechess-bw-url) !important;
+  }
+  .chess-board img[alt$="black king"] {
+    content: var(--sharechess-kb-url) !important;
+  }
+  .chess-board img[alt$="white king"] {
+    content: var(--sharechess-kw-url) !important;
+  }
+  .chess-board img[alt$="black knight"] {
+    content: var(--sharechess-nb-url) !important;
+  }
+  .chess-board img[alt$="white knight"] {
+    content: var(--sharechess-nw-url) !important;
+  }
+  .chess-board img[alt$="black pawn"] {
+    content: var(--sharechess-pb-url) !important;
+  }
+  .chess-board img[alt$="white pawn"] {
+    content: var(--sharechess-pw-url) !important;
+  }
+  .chess-board img[alt$="black queen"] {
+    content: var(--sharechess-qb-url) !important;
+  }
+  .chess-board img[alt$="white queen"] {
+    content: var(--sharechess-qw-url) !important;
+  }
+  .chess-board img[alt$="black rook"] {
+    content: var(--sharechess-rb-url) !important;
+  }
+  .chess-board img[alt$="white rook"] {
+    content: var(--sharechess-rw-url) !important;
+  }
+}
+
+@-moz-document domain("aimchess.com") {
+  .cm-chessboard .pieces > g {
+    filter: drop-shadow(0.2vh 0.2vh 0.2vh #00000088);
+  }
+}
+
+@-moz-document domain("chessable.com") {
+  svg[class*="piece-"] {
+    background-position: center;
+    background-size: contain;
+    filter: drop-shadow(0.3vh 0.3vh 0.2vh #00000088);
+  }
+
+  .promoteChoice#promoteQueen {
+    content: var(--sharechess-qw-url);
+  }
+
+  .promoteChoice#promoteQueen[src*="bQ.png"] {
+    content: var(--sharechess-qb-url);
+  }
+
+  .promoteChoice#promoteRook {
+    content: var(--sharechess-rw-url);
+  }
+
+  .promoteChoice#promoteRook[src*="bR.png"] {
+    content: var(--sharechess-rb-url);
+  }
+
+  .promoteChoice#promoteKnight {
+    content: var(--sharechess-nw-url);
+  }
+
+  .promoteChoice#promoteKnight[src*="bN.png"] {
+    content: var(--sharechess-nb-url);
+  }
+
+  .promoteChoice#promoteBishop {
+    content: var(--sharechess-bw-url);
+  }
+
+  .promoteChoice#promoteBishop[src*="bB.png"] {
+    content: var(--sharechess-bb-url);
+  }
+
+  svg[class*="piece-"] * {
+    display: none;
+  }
+
+  svg[data-piece="bB"] {
+    background-image: var(--sharechess-bb-url) !important;
+  }
+
+  img[data-piece="bB"],
+  img[src$="UM2AAAAAElFTkSuQmCC"][data-piece="wP"] {
+    content: var(--sharechess-bb-url) !important;
+  }
+
+  svg[data-piece="wB"] {
+    background-image: var(--sharechess-bw-url) !important;
+  }
+
+  img[data-piece="wB"],
+  img[src$="5oAAAAASUVORK5CYII="][data-piece="wP"] {
+    content: var(--sharechess-bw-url) !important;
+  }
+
+  svg[data-piece="bK"] {
+    background-image: var(--sharechess-kb-url) !important;
+  }
+
+  img[data-piece="bK"],
+  img[src$="CLzAAAAAElFTkSuQmCC"][data-piece="wP"] {
+    content: var(--sharechess-kb-url) !important;
+  }
+
+  svg[data-piece="wK"] {
+    background-image: var(--sharechess-kw-url) !important;
+  }
+
+  img[data-piece="wK"],
+  img[src$="P9HAAAAAElFTkSuQmCC"][data-piece="wP"] {
+    content: var(--sharechess-kw-url) !important;
+  }
+
+  svg[data-piece="bN"] {
+    background-image: var(--sharechess-nb-url) !important;
+  }
+
+  img[data-piece="bN"],
+  img[src$="QAAAABJRU5ErkJggg=="][data-piece="wP"] {
+    content: var(--sharechess-nb-url) !important;
+  }
+
+  svg[data-piece="wN"] {
+    background-image: var(--sharechess-nw-url) !important;
+  }
+
+  img[data-piece="wN"],
+  img[src$="AAAAABJRU5ErkJggg=="][data-piece="wP"] {
+    content: var(--sharechess-nw-url) !important;
+  }
+
+  svg[data-piece="bP"] {
+    background-image: var(--sharechess-pb-url) !important;
+  }
+
+  img[data-piece="bP"],
+  img[src$="25GAAAAAElFTkSuQmCC"][data-piece="wP"] {
+    content: var(--sharechess-pb-url) !important;
+  }
+
+  svg[data-piece="wP"] {
+    background-image: var(--sharechess-pw-url) !important;
+  }
+
+  img[data-piece="wP"],
+  img[src$="caMAAAAAElFTkSuQmCC"][data-piece="wP"] {
+    content: var(--sharechess-pw-url) !important;
+  }
+
+  svg[data-piece="bQ"] {
+    background-image: var(--sharechess-qb-url) !important;
+  }
+
+  img[data-piece="bQ"],
+  img[src$="wAAAABJRU5ErkJggg=="][data-piece="wP"] {
+    content: var(--sharechess-qb-url) !important;
+  }
+
+  svg[data-piece="wQ"] {
+    background-image: var(--sharechess-qw-url) !important;
+  }
+
+  img[data-piece="wQ"],
+  img[src$="9TGAAAAAElFTkSuQmCC"][data-piece="wP"] {
+    content: var(--sharechess-qw-url) !important;
+  }
+
+  svg[data-piece="bR"] {
+    background-image: var(--sharechess-rb-url) !important;
+  }
+
+  img[data-piece="bR"],
+  img[src$="MJoAAAAAElFTkSuQmCC"][data-piece="wP"] {
+    content: var(--sharechess-rb-url) !important;
+  }
+
+  svg[data-piece="wR"] {
+    background-image: var(--sharechess-rw-url) !important;
+  }
+
+  img[data-piece="wR"],
+  img[src$="SLxAAAAAElFTkSuQmCC"][data-piece="wP"] {
+    content: var(--sharechess-rw-url) !important;
   }
 }
