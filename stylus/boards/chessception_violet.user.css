@@ -1,0 +1,811 @@
+/* ==UserStyle==
+    @name           Custom chessboard
+    @namespace      sharechess.github.io
+    @version        1.5.0
+    @description    Chessception Violet chessboard for lichess.org, chess.com, openingtree.com, chessgames.com, chess24.com, chesstempo.com, listudy.org, chesspecker.com, chessbase.com, wikipedia.org, aimchess.com, chessable.com
+    @author         sharechess.github.io
+    ==/UserStyle== */
+
+@-moz-document domain(lichess.org), domain(chess.com), domain(openingtree.com), domain(chessgames.com), domain(chess24.com), domain(chesstempo.com), domain(listudy.org), domain(chesspecker.com), domain(chessbase.com), domain(wikipedia.org), domain(aimchess.com), domain(chessable.com) {
+  :root {
+    --sharechess-board-url: url(data:image/png;base64,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);
+    --sharechess-border-url: none;
+    --sharechess-border-color: #35458b;
+  }
+}
+
+@-moz-document domain("lichess.org") {
+  .is2d cg-board {
+    background-image: var(--sharechess-board-url) !important;
+  }
+  .is2d coords {
+    --cg-ccw: #f4eeff !important;
+    --cg-ccb: #6777bc !important;
+  }
+  square.last-move {
+    background-color: #55ff0033 !important;
+  }
+}
+
+@-moz-document domain("chess.com") {
+  .board {
+    background-image: var(--sharechess-board-url) !important;
+  }
+  .coordinate-light {
+    fill: #6777bc !important;
+  }
+  .coordinate-dark {
+    fill: #f4eeff !important;
+  }
+  .coords-light {
+    color: #6777bc !important;
+  }
+  .coords-dark {
+    color: #f4eeff !important;
+  }
+  .highlight,
+  .square.move-square {
+    opacity: 1 !important;
+    background-color: #55ff0033 !important;
+  }
+}
+
+@-moz-document domain("openingtree.com") {
+  .cg-wrap {
+    background-image: var(--sharechess-board-url) !important;
+    background-size: cover !important;
+    filter: none !important;
+  }
+  square.last-move {
+    background-color: #55ff0033 !important;
+  }
+}
+
+@-moz-document domain("chessgames.com") {
+  [class^="board-"] {
+    background-image: var(--sharechess-board-url) !important;
+    background-size: cover !important;
+  }
+
+  [class^="square-"] {
+    background: none !important;
+  }
+
+  [class^="square-"][class*="white-"] {
+    color: #6777bc !important;
+  }
+
+  [class^="square-"][class*="black-"] {
+    color: #f4eeff !important;
+  }
+
+  [class*="highlight1"],
+  [class*="highlight2"] {
+    background: #55ff0033 !important;
+    box-shadow: none;
+  }
+}
+
+@-moz-document domain("chess24.com") {
+  .chess-board .svg {
+    background-image: var(--sharechess-board-url) !important;
+    background-size: cover !important;
+    opacity: 1 !important;
+    border-radius: 2.8%;
+  }
+
+  .chess-board .svg > * {
+    opacity: 0.6 !important;
+    filter: brightness(0.5) sepia(1) hue-rotate(100deg) saturate(100);
+  }
+
+  [data-cy="chessboard"]
+    > div:first-child
+    > div:first-child
+    > div:first-child
+    > div
+    > svg {
+    background-image: var(--sharechess-board-url) !important;
+    background-size: cover !important;
+  }
+
+  [data-cy="chessboard"]
+    > div:first-child
+    > div:first-child
+    > div:first-child
+    > div
+    > svg
+    * {
+    display: none;
+  }
+
+  [data-cy="chessboard"]
+    > div:first-child
+    > div:first-child
+    > div:first-child
+    > div:nth-child(2),
+  [data-cy="chessboard"]
+    > div:first-child
+    > div:first-child
+    > div:first-child
+    > div:nth-child(3) {
+    background-color: #55ff0033 !important;
+    opacity: 1 !important;
+  }
+}
+
+@-moz-document domain("chesstempo.com") {
+  .ct-square-dark,
+  .ct-square-light,
+  .ct-board-row {
+    background: none !important;
+  }
+
+  .ct-board-squares {
+    background-image: var(--sharechess-board-url) !important;
+    background-size: cover !important;
+  }
+
+  .ct-board-inner-holder {
+    background-color: var(--sharechess-border-color) !important;
+    background-image: var(--sharechess-border-url) !important;
+    background-size: cover !important;
+  }
+
+  .ct-coord-row,
+  .ct-coord-column {
+    fill: #f4eeff !important;
+  }
+
+  .ct-promotion-piece-holder {
+    background-color: var(--sharechess-border-color) !important;
+  }
+
+  .ct-promotion-piece-holder:hover {
+    background-color: var(--sharechess-border-color) !important;
+    background-image: linear-gradient(#ffffff55, #ffffff55) !important;
+  }
+
+  .ct-promotion-piece-holder :hover {
+    background-color: transparent !important;
+  }
+}
+
+@-moz-document domain("listudy.org") {
+  .chessboard {
+    background-image: var(--sharechess-board-url) !important;
+    background-size: cover !important;
+  }
+
+  square.last-move {
+    background-color: #55ff0033 !important;
+  }
+}
+
+@-moz-document domain("chesspecker.com") {
+  cg-board {
+    background-image: var(--sharechess-board-url) !important;
+  }
+
+  .ranks coord:nth-child(odd),
+  .files coord:nth-child(even) {
+    color: #6777bc !important;
+  }
+
+  .ranks coord:nth-child(even),
+  .files coord:nth-child(odd) {
+    color: #f4eeff !important;
+  }
+
+  square.last-move {
+    background-color: #55ff0033 !important;
+  }
+}
+
+@-moz-document domain("chessbase.com") {
+  [class^="CBChessBoard_grid"] {
+    background-color: var(--sharechess-border-color) !important;
+    background-image: var(--sharechess-border-url) !important;
+    background-size: cover !important;
+    --chessFieldWhite: transparent !important;
+    --chessFieldBlack: transparent !important;
+    --marginBackgroundColor: transparent !important;
+    --arrowColor: #55ff00 !important;
+    --squareHighlightColor: #55ff00 !important;
+  }
+
+  [class^="CBBoardMargin_marginContent"] {
+    fill: #f4eeff !important;
+  }
+
+  [class^="CBSquare_container"] {
+    background-image: var(--sharechess-board-url) !important;
+    background-size: 800% !important;
+  }
+
+  [class^="CBSelectPromotion_promotionContainer"] {
+    background-color: var(--sharechess-border-color) !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+
+  [class^="CBSelectPromotion_promotionElement"]:hover {
+    background-color: #ffffff33 !important;
+  }
+
+  [boardalignment^="default"] > [squareindex="0"] {
+    background-position: -0% -700%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="0"] {
+    background-position: -700% -0%;
+  }
+
+  [boardalignment^="default"] > [squareindex="1"] {
+    background-position: -0% -600%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="1"] {
+    background-position: -700% -100%;
+  }
+
+  [boardalignment^="default"] > [squareindex="2"] {
+    background-position: -0% -500%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="2"] {
+    background-position: -700% -200%;
+  }
+
+  [boardalignment^="default"] > [squareindex="3"] {
+    background-position: -0% -400%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="3"] {
+    background-position: -700% -300%;
+  }
+
+  [boardalignment^="default"] > [squareindex="4"] {
+    background-position: -0% -300%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="4"] {
+    background-position: -700% -400%;
+  }
+
+  [boardalignment^="default"] > [squareindex="5"] {
+    background-position: -0% -200%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="5"] {
+    background-position: -700% -500%;
+  }
+
+  [boardalignment^="default"] > [squareindex="6"] {
+    background-position: -0% -100%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="6"] {
+    background-position: -700% -600%;
+  }
+
+  [boardalignment^="default"] > [squareindex="7"] {
+    background-position: -0% -0%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="7"] {
+    background-position: -700% -700%;
+  }
+
+  [boardalignment^="default"] > [squareindex="8"] {
+    background-position: -100% -700%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="8"] {
+    background-position: -600% -0%;
+  }
+
+  [boardalignment^="default"] > [squareindex="9"] {
+    background-position: -100% -600%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="9"] {
+    background-position: -600% -100%;
+  }
+
+  [boardalignment^="default"] > [squareindex="10"] {
+    background-position: -100% -500%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="10"] {
+    background-position: -600% -200%;
+  }
+
+  [boardalignment^="default"] > [squareindex="11"] {
+    background-position: -100% -400%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="11"] {
+    background-position: -600% -300%;
+  }
+
+  [boardalignment^="default"] > [squareindex="12"] {
+    background-position: -100% -300%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="12"] {
+    background-position: -600% -400%;
+  }
+
+  [boardalignment^="default"] > [squareindex="13"] {
+    background-position: -100% -200%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="13"] {
+    background-position: -600% -500%;
+  }
+
+  [boardalignment^="default"] > [squareindex="14"] {
+    background-position: -100% -100%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="14"] {
+    background-position: -600% -600%;
+  }
+
+  [boardalignment^="default"] > [squareindex="15"] {
+    background-position: -100% -0%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="15"] {
+    background-position: -600% -700%;
+  }
+
+  [boardalignment^="default"] > [squareindex="16"] {
+    background-position: -200% -700%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="16"] {
+    background-position: -500% -0%;
+  }
+
+  [boardalignment^="default"] > [squareindex="17"] {
+    background-position: -200% -600%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="17"] {
+    background-position: -500% -100%;
+  }
+
+  [boardalignment^="default"] > [squareindex="18"] {
+    background-position: -200% -500%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="18"] {
+    background-position: -500% -200%;
+  }
+
+  [boardalignment^="default"] > [squareindex="19"] {
+    background-position: -200% -400%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="19"] {
+    background-position: -500% -300%;
+  }
+
+  [boardalignment^="default"] > [squareindex="20"] {
+    background-position: -200% -300%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="20"] {
+    background-position: -500% -400%;
+  }
+
+  [boardalignment^="default"] > [squareindex="21"] {
+    background-position: -200% -200%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="21"] {
+    background-position: -500% -500%;
+  }
+
+  [boardalignment^="default"] > [squareindex="22"] {
+    background-position: -200% -100%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="22"] {
+    background-position: -500% -600%;
+  }
+
+  [boardalignment^="default"] > [squareindex="23"] {
+    background-position: -200% -0%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="23"] {
+    background-position: -500% -700%;
+  }
+
+  [boardalignment^="default"] > [squareindex="24"] {
+    background-position: -300% -700%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="24"] {
+    background-position: -400% -0%;
+  }
+
+  [boardalignment^="default"] > [squareindex="25"] {
+    background-position: -300% -600%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="25"] {
+    background-position: -400% -100%;
+  }
+
+  [boardalignment^="default"] > [squareindex="26"] {
+    background-position: -300% -500%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="26"] {
+    background-position: -400% -200%;
+  }
+
+  [boardalignment^="default"] > [squareindex="27"] {
+    background-position: -300% -400%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="27"] {
+    background-position: -400% -300%;
+  }
+
+  [boardalignment^="default"] > [squareindex="28"] {
+    background-position: -300% -300%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="28"] {
+    background-position: -400% -400%;
+  }
+
+  [boardalignment^="default"] > [squareindex="29"] {
+    background-position: -300% -200%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="29"] {
+    background-position: -400% -500%;
+  }
+
+  [boardalignment^="default"] > [squareindex="30"] {
+    background-position: -300% -100%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="30"] {
+    background-position: -400% -600%;
+  }
+
+  [boardalignment^="default"] > [squareindex="31"] {
+    background-position: -300% -0%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="31"] {
+    background-position: -400% -700%;
+  }
+
+  [boardalignment^="default"] > [squareindex="32"] {
+    background-position: -400% -700%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="32"] {
+    background-position: -300% -0%;
+  }
+
+  [boardalignment^="default"] > [squareindex="33"] {
+    background-position: -400% -600%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="33"] {
+    background-position: -300% -100%;
+  }
+
+  [boardalignment^="default"] > [squareindex="34"] {
+    background-position: -400% -500%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="34"] {
+    background-position: -300% -200%;
+  }
+
+  [boardalignment^="default"] > [squareindex="35"] {
+    background-position: -400% -400%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="35"] {
+    background-position: -300% -300%;
+  }
+
+  [boardalignment^="default"] > [squareindex="36"] {
+    background-position: -400% -300%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="36"] {
+    background-position: -300% -400%;
+  }
+
+  [boardalignment^="default"] > [squareindex="37"] {
+    background-position: -400% -200%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="37"] {
+    background-position: -300% -500%;
+  }
+
+  [boardalignment^="default"] > [squareindex="38"] {
+    background-position: -400% -100%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="38"] {
+    background-position: -300% -600%;
+  }
+
+  [boardalignment^="default"] > [squareindex="39"] {
+    background-position: -400% -0%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="39"] {
+    background-position: -300% -700%;
+  }
+
+  [boardalignment^="default"] > [squareindex="40"] {
+    background-position: -500% -700%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="40"] {
+    background-position: -200% -0%;
+  }
+
+  [boardalignment^="default"] > [squareindex="41"] {
+    background-position: -500% -600%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="41"] {
+    background-position: -200% -100%;
+  }
+
+  [boardalignment^="default"] > [squareindex="42"] {
+    background-position: -500% -500%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="42"] {
+    background-position: -200% -200%;
+  }
+
+  [boardalignment^="default"] > [squareindex="43"] {
+    background-position: -500% -400%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="43"] {
+    background-position: -200% -300%;
+  }
+
+  [boardalignment^="default"] > [squareindex="44"] {
+    background-position: -500% -300%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="44"] {
+    background-position: -200% -400%;
+  }
+
+  [boardalignment^="default"] > [squareindex="45"] {
+    background-position: -500% -200%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="45"] {
+    background-position: -200% -500%;
+  }
+
+  [boardalignment^="default"] > [squareindex="46"] {
+    background-position: -500% -100%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="46"] {
+    background-position: -200% -600%;
+  }
+
+  [boardalignment^="default"] > [squareindex="47"] {
+    background-position: -500% -0%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="47"] {
+    background-position: -200% -700%;
+  }
+
+  [boardalignment^="default"] > [squareindex="48"] {
+    background-position: -600% -700%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="48"] {
+    background-position: -100% -0%;
+  }
+
+  [boardalignment^="default"] > [squareindex="49"] {
+    background-position: -600% -600%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="49"] {
+    background-position: -100% -100%;
+  }
+
+  [boardalignment^="default"] > [squareindex="50"] {
+    background-position: -600% -500%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="50"] {
+    background-position: -100% -200%;
+  }
+
+  [boardalignment^="default"] > [squareindex="51"] {
+    background-position: -600% -400%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="51"] {
+    background-position: -100% -300%;
+  }
+
+  [boardalignment^="default"] > [squareindex="52"] {
+    background-position: -600% -300%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="52"] {
+    background-position: -100% -400%;
+  }
+
+  [boardalignment^="default"] > [squareindex="53"] {
+    background-position: -600% -200%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="53"] {
+    background-position: -100% -500%;
+  }
+
+  [boardalignment^="default"] > [squareindex="54"] {
+    background-position: -600% -100%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="54"] {
+    background-position: -100% -600%;
+  }
+
+  [boardalignment^="default"] > [squareindex="55"] {
+    background-position: -600% -0%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="55"] {
+    background-position: -100% -700%;
+  }
+
+  [boardalignment^="default"] > [squareindex="56"] {
+    background-position: -700% -700%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="56"] {
+    background-position: -0% -0%;
+  }
+
+  [boardalignment^="default"] > [squareindex="57"] {
+    background-position: -700% -600%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="57"] {
+    background-position: -0% -100%;
+  }
+
+  [boardalignment^="default"] > [squareindex="58"] {
+    background-position: -700% -500%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="58"] {
+    background-position: -0% -200%;
+  }
+
+  [boardalignment^="default"] > [squareindex="59"] {
+    background-position: -700% -400%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="59"] {
+    background-position: -0% -300%;
+  }
+
+  [boardalignment^="default"] > [squareindex="60"] {
+    background-position: -700% -300%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="60"] {
+    background-position: -0% -400%;
+  }
+
+  [boardalignment^="default"] > [squareindex="61"] {
+    background-position: -700% -200%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="61"] {
+    background-position: -0% -500%;
+  }
+
+  [boardalignment^="default"] > [squareindex="62"] {
+    background-position: -700% -100%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="62"] {
+    background-position: -0% -600%;
+  }
+
+  [boardalignment^="default"] > [squareindex="63"] {
+    background-position: -700% -0%;
+  }
+
+  [boardalignment^="upsideDown"] > [squareindex="63"] {
+    background-position: -0% -700%;
+  }
+}
+
+@-moz-document domain("wikipedia.org") {
+  .chess-board > img {
+    content: var(--sharechess-board-url) !important;
+  }
+}
+
+@-moz-document domain("aimchess.com") {
+  .board .square.white,
+  .board .square.black {
+    fill: transparent !important;
+  }
+
+  .board .square[style^="fill"] {
+    fill: #55ff0033 !important;
+  }
+
+  .board .border {
+    fill: transparent !important;
+    stroke-width: 0 !important;
+  }
+
+  .board .border-inner {
+    stroke-width: 0 !important;
+  }
+
+  .cm-chessboard {
+    background-color: var(--sharechess-border-color) !important;
+    background-image: var(--sharechess-board-url), var(--sharechess-border-url);
+    background-size: 92%, 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .cm-chessboard .coordinate {
+    fill: #f4eeff !important;
+  }
+}
+
+@-moz-document domain("chessable.com") {
+  [class^="chessboard"] > div > div[class^="board"] {
+    background-image: var(--sharechess-board-url) !important;
+    background-size: cover !important;
+  }
+
+  .notation-light {
+    color: #f4eeff !important;
+  }
+
+  .notation-dark {
+    color: #6777bc !important;
+  }
+
+  .highlight-w,
+  .highlight-b {
+    background-color: #55ff0033 !important;
+  }
+
+  [class*="legal-square-dot"][class*="highlight2"],
+  [class*="legal-square-capture"][class*="highlight2"],
+  .highlight-legal:not([class*="legal-square-dot"]):not([class*="legal-square-capture"]) {
+    background-color: #00000022 !important;
+  }
+}
