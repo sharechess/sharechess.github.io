@@ -1,7 +1,7 @@
 /* ==UserStyle==
     @name           Custom chessboard
     @namespace      sharechess.github.io
-    @version        1.5.0
+    @version        1.6.0
     @description    Clouds Sandal chessboard for lichess.org, chess.com, openingtree.com, chessgames.com, chess24.com, chesstempo.com, listudy.org, chesspecker.com, chessbase.com, wikipedia.org, aimchess.com, chessable.com
     @author         sharechess.github.io
     ==/UserStyle== */
@@ -17,10 +17,14 @@
 @-moz-document domain("lichess.org") {
   .is2d cg-board {
     background-image: var(--sharechess-board-url) !important;
+    background-size: cover;
+  }
+  .is2d cg-board::before {
+    background-image: none;
   }
   .is2d coords {
-    --cg-ccw: #e4d4cd !important;
-    --cg-ccb: #a6826a !important;
+    ---cg-ccw: #e4d4cd !important;
+    ---cg-ccb: #a6826a !important;
   }
   square.last-move {
     background-color: #f15e757f !important;
@@ -748,7 +752,7 @@
 }
 
 @-moz-document domain("wikipedia.org") {
-  .chess-board > img {
+  .chess-board img {
     content: var(--sharechess-board-url) !important;
   }
 }
