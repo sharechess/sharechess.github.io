@@ -1,7 +1,7 @@
 /* ==UserStyle==
     @name           Custom chessboard
     @namespace      sharechess.github.io
-    @version        1.6.0
+    @version        1.7.0
     @description    Grass2 chessboard for lichess.org, chess.com, openingtree.com, chessgames.com, chess24.com, chesstempo.com, listudy.org, chesspecker.com, chessbase.com, wikipedia.org, aimchess.com, chessable.com
     @author         sharechess.github.io
     ==/UserStyle== */
@@ -20,7 +20,7 @@
     background-size: cover;
   }
   .is2d cg-board::before {
-    background-image: none;
+    background-image: none !important;
   }
   .is2d coords {
     ---cg-ccw: #d3ff9ecc !important;
